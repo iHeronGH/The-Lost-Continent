@@ -1,0 +1,19 @@
+{
+	"pack": {
+		"pack_format": 15,
+		"description": [
+			{
+				"text": "Version: ",
+				"color": "gray"
+			},
+			{
+				"text": "2.0.0",
+				"color": "gold"
+			},
+			"\n\n",
+			{
+				"text": "A DLC datapack for Elytras of Fire!\n\nThis add-on implements the three\nPantalan tribes, along with nine new\nabilities and three new passives!"
+			}
+		]
+	}
+}

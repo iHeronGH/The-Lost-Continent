@@ -1,0 +1,19 @@
+{
+	"parent": "tlc:pantalan",
+	"criteria": {
+		"is_hivewing": {
+			"trigger": "minecraft:tick",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:reference",
+						"name": "tlc:tribes/hivewings"
+					}
+				]
+			}
+		}
+	},
+	"rewards": {
+		"function": "tlc:effects/main"
+	}
+}

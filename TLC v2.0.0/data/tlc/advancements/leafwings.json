@@ -1,0 +1,19 @@
+{
+	"parent": "tlc:pantalan",
+	"criteria": {
+		"is_leafwing": {
+			"trigger": "minecraft:tick",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:reference",
+						"name": "tlc:tribes/leafwings"
+					}
+				]
+			}
+		}
+	},
+	"rewards": {
+		"function": "tlc:effects/main"
+	}
+}
