@@ -19,7 +19,7 @@ This DLC depends on [Elytras of Fire Lib](https://github.com/iHeronGH/Elytras-of
   - [Passives](#passives)
     - [Hive Mind](#hive-mind)
     - [Silk Spinner](#silk-spinner)
-    - [Photosynthesis](#true-blessing)
+    - [Photosynthesis](#photosynthesis)
   - [Abilities](#abilities)
   - [Custom Effects](#custom-effects)
 - [Planned Features](#planned-features)
@@ -67,29 +67,29 @@ There are currently 3 tribes in The Lost Continent:
 > *\- H*
 
 Passive Abilities: [Hive Mind](#hive-mind)<br>
-Primary Ability: [Frost Breath](#abilities)<br>
-Secondary Ability: [Serrated Strike](#abilities)<br>
-Tertiary Ability: [Icicle Incision](#abilities)
+Primary Ability: [Acid Spray](#abilities)<br>
+Secondary Ability: [Hive Mind](#abilities)<br>
+Tertiary Ability: [Sting Strike](#abilities)
 
 #### LeafWings
 
 > *"The LeafWings are an impressive tribe. From their exceptional fire breath and strong muscles to their ability to last impossible lengths of time underwater, their massive power is unbiased to any environment."*
 > *\- H*
 
-Passive Abilities: [Silk Spinner](#silk-spinner)<br>
-Primary Ability: [Flame Breath](#abilities)<br>
-Secondary Ability: [Terrashock](#abilities)<br>
-Tertiary Ability: [Leaf Swipe](#abilities)
+Passive Abilities: [Photosynthesis](#photosynthesis)<br>
+Primary Ability: [Fury Shift](#abilities)<br>
+Secondary Ability: [Leafspeak](#abilities)<br>
+Tertiary Ability: [Venom Aura](#abilities)
 
 #### SilkWings
 
 > *"The SilkWings are the uncontested rulers of the silks. Their keen eyes allow them to see in the dark, and over many millenia have adapted glowing scales, strong tails, gills, and webbed talons. No attack on the SilkWings has gone without heavy loss."*
 > *\- H*
 
-Passive Abilities: [Photosynthesis](#true-blessing)<br>
-Primary Ability: [Tidal Wave](#abilities)<br>
-Secondary Ability: [Ocean's Blessing](#abilities)<br>
-Tertiary Ability: [Tail Flail](#abilities)
+Passive Abilities: [Silk Spinner](#silk-spinner)<br>
+Primary Ability: [Silk Shot](#abilities)<br>
+Secondary Ability: [Sense](#abilities)<br>
+Tertiary Ability: [Webbing](#abilities)
 
 </details>
 
@@ -97,7 +97,7 @@ Tertiary Ability: [Tail Flail](#abilities)
 
 ### Passives
 
-There are currently 8 passive abilities in Elytras of Fire:
+There are currently 3 passive abilities in The Lost Continent:
 
 <details>
 
@@ -126,12 +126,15 @@ Photosynthesis is a [LeafWing](#leafwings) passive ability. It gives variable le
 
 #### Silk Spinner
 
-Silk Spinner is a [SilkWing](#silkwings) passive ability.
+Silk Spinner is a [SilkWing](#silkwings) passive ability. It changes the effects of some abilities depending on its charge level.
 
-| Level | Activation | Effect | Charge Duration | Cooldown |
-|:-----:|:----------:|:------:|:---------------:|:--------:|
-|   1   |            |        |       None      |   None   |
-|   2   |            |        |       None      |   None   |
+| Level |          Activation         | Effect | Charge Duration | Cooldown |
+|:-----:|:---------------------------:|:------:|:---------------:|:--------:|
+|   1   | None; automatically charges |  |        2s       |   None   |
+|   2   | None; automatically charges |  |        2s       |   None   |
+|   3   | None; automatically charges |  |       2.5s      |   None   |
+|   4   | None; automatically charges |  |       2.5s      |   None   |
+|   5   | None; automatically charges |  |        3s       |   None   |
 
 </details>
 
