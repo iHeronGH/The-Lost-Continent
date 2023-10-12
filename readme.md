@@ -2,7 +2,7 @@
 
 ## Welcome!
 
-The Lost Continent is a Minecraft datapack directly inspired by the world of Wings of Fire! Inspired by Pantala, it adds in three new tribes, along with three new abilities for each.
+The Lost Continent is a Minecraft datapack directly inspired by the world of Wings of Fire! Inspired by Pantala, it adds in the three new tribes, along with three new abilities and immersive passive abilities for each one!
 
 This DLC depends on [Elytras of Fire Lib](https://github.com/iHeronGH/Elytras-of-Fire-Lib) and requires its [installation](#installation-and-uninstallation) in order to be used correctly.
 
@@ -18,12 +18,12 @@ This DLC depends on [Elytras of Fire Lib](https://github.com/iHeronGH/Elytras-of
     - [SilkWings](#silkwings)
   - [Passives](#passives)
     - [Hive Mind](#hive-mind)
-    - [Silk Spinner](#silk-spinner)
     - [Photosynthesis](#photosynthesis)
-  - [Abilities](#abilities)
-  - [Custom Effects](#custom-effects)
+    - [Silk Spinner](#silk-spinner)
+  - [Abilities](#tribe-abilities)
+  - [Custom Effects and Interactions](#custom-effects-and-interactions)
 - [Planned Features](#planned-features)
-  - [Abilities](#abilities-1)
+  - [Abilities](#abilities)
 - [Other Qualities](#other-qualities)
   - [IMP Compliance](#imp-compliance)
 
@@ -41,9 +41,9 @@ Installing The Lost Continent is relatively simple:
 
 And uninstalling The Lost Continent is even simpler:
 
-1. Run the command **`/function eof:uninstall`**. This will uninstall The Lost Continent, completely removing all elements that it uses\* without affecting any other non-dependent DLCs. And that's it!
+1. Run the command **`/function tlc:uninstall`**. This will uninstall The Lost Continent, completely removing all elements that it uses\* without affecting any other non-dependent DLCs. And that's it!
 
-    *\*Always double-check that this DLC uninstalled correctly! The Lost Continent does its best to remove itself and its dependencies; if you find that it did not, please [report it as a bug](https://docs.google.com/forms/d/e/1FAIpQLSfm4wEvcERhBCxIhuzV7Gi4yX_sYCBn8zpUE2acBfyOEFW7OA/viewform?usp=sf_link) on Google Forms or [create an issue](https://github.com/iHeronGH/Elytras-of-Fire/issues) over on Github.*
+    *\*Always double-check that this DLC uninstalled correctly! The Lost Continent does its best to remove itself and its dependencies; if you find that it did not, please [report it as a bug](https://docs.google.com/forms/d/e/1FAIpQLSfm4wEvcERhBCxIhuzV7Gi4yX_sYCBn8zpUE2acBfyOEFW7OA/viewform?usp=sf_link) on Google Forms or [create an issue](https://github.com/iHeronGH/The-Lost-Continent/issues) over on Github.*
 
 ---
 
@@ -63,33 +63,33 @@ There are currently 3 tribes in The Lost Continent:
 
 #### HiveWings
 
-> *"The HiveWings are pristine with respect to both their appearance and their battle prowess. Cruel, serrated claws and their unique frost breath make this tribe nightmarish to combat, especially in the frigid lands they call home."*
-> *\- H*
+> *"The HiveWings are a cooperative bunch, able to work together in unison to accomplish great things. Between the wicked stingers they wield and the foul stench they can weaponize, even alone they are ferocious combatants, but together they are unstoppable."*
+> *\- C*
 
 Passive Abilities: [Hive Mind](#hive-mind)<br>
-Primary Ability: [Acid Spray](#abilities)<br>
-Secondary Ability: [Hive Mind](#abilities)<br>
-Tertiary Ability: [Sting Strike](#abilities)
+Primary Ability: [Acid Spray](#tribe-abilities)<br>
+Secondary Ability: [Hive Mind](#tribe-abilities)<br>
+Tertiary Ability: [Sting Strike](#tribe-abilities)
 
 #### LeafWings
 
-> *"The LeafWings are an impressive tribe. From their exceptional fire breath and strong muscles to their ability to last impossible lengths of time underwater, their massive power is unbiased to any environment."*
-> *\- H*
+> *"The LeafWings are the epitome of adaptation. Having lost their forest homes to a savage war, they've honed their affinity for nature over thousands of years in the form of Leafspeak, and by using this they can converse with and command flora to uncanny degrees."*
+> *\- C*
 
 Passive Abilities: [Photosynthesis](#photosynthesis)<br>
-Primary Ability: [Fury Shift](#abilities)<br>
-Secondary Ability: [Leafspeak](#abilities)<br>
-Tertiary Ability: [Venom Aura](#abilities)
+Primary Ability: [Fury Shift](#tribe-abilities)<br>
+Secondary Ability: [Leafspeak](#tribe-abilities)<br>
+Tertiary Ability: [Venom Aura](#tribe-abilities)
 
 #### SilkWings
 
-> *"The SilkWings are the uncontested rulers of the silks. Their keen eyes allow them to see in the dark, and over many millenia have adapted glowing scales, strong tails, gills, and webbed talons. No attack on the SilkWings has gone without heavy loss."*
-> *\- H*
+> *"The SilkWings are a deceptively passive tribe. Able to produce silk stronger than nearly any other material known to dragonkind, they use this to ensnare prey and opponents alike. Angering a SilkWing takes guts, time... and a lot of stupidity."*
+> *\- C*
 
 Passive Abilities: [Silk Spinner](#silk-spinner)<br>
-Primary Ability: [Silk Shot](#abilities)<br>
-Secondary Ability: [Sense](#abilities)<br>
-Tertiary Ability: [Webbing](#abilities)
+Primary Ability: [Silk Shot](#tribe-abilities)<br>
+Secondary Ability: [Sense](#tribe-abilities)<br>
+Tertiary Ability: [Webbing](#tribe-abilities)
 
 </details>
 
@@ -111,38 +111,38 @@ Hive Mind is a [HiveWing](#hivewings) passive ability. It gives varying effects 
 
 | Level |     Activation     |              Effect             | Charge Duration | Cooldown |
 |:-----:|:------------------:|:-------------------------------:|:---------------:|:--------:|
-|   1   |  1 nearby HiveWing |           Speed 1 (1s)          |       None      |   None   |
-|   2   | 2 nearby HiveWings |           Speed 2 (1s)          |       None      |   None   |
-|   3   | 3 nearby HiveWings | Speed 2 (1s)<br>Strength 1 (1s) |       None      |   None   |
+|   1   |  2 nearby HiveWing |           Speed 1 (1s)          | --- | --- |
+|   2   | 3 nearby HiveWings |           Speed 2 (1s)          | --- | --- |
+|   3   | 4 nearby HiveWings | Speed 2 (1s)<br>Strength 1 (1s) | --- | --- |
 
 #### Photosynthesis
 
 Photosynthesis is a [LeafWing](#leafwings) passive ability. It gives variable levels of Regeneration depending on the time of day.
 
-| Level |                     Activation                     |          Effect          | Charge Duration | Cooldown |
-|:-----:|:--------------------------------------------------:|:------------------------:|:---------------:|:--------:|
-|   1   |    Time is between dusk (24000) and dawn (12000)   |    Regeneration 1 (2s)   |       None      |    20s   |
-|   2   | Time is between sunset (21600) and sunrise (14400) | Regeneration 2 (3s) (1s) |       None      |    20s   |
+| Level |                     Activation                     |        Effect       | Charge Duration | Cooldown |
+|:-----:|:--------------------------------------------------:|:-------------------:|:---------------:|:--------:|
+|   1   |    Time is between dawn (24000) and dusk (12000)   | Regeneration 1 (2s) | --- |    20s   |
+|   2   | Time is between sunrise (21600) and sunset (14400) | Regeneration 2 (3s) | --- |    20s   |
 
 #### Silk Spinner
 
-Silk Spinner is a [SilkWing](#silkwings) passive ability. It changes the effects of some abilities depending on its charge level.
+Silk Spinner is a [SilkWing](#silkwings) passive ability. It changes the effects of some abilities depending on its level of charge, and can have its charge rate increased by different means.
 
 | Level |          Activation         | Effect | Charge Duration | Cooldown |
 |:-----:|:---------------------------:|:------:|:---------------:|:--------:|
-|   1   | None; automatically charges |  |        2s       |   None   |
-|   2   | None; automatically charges |  |        2s       |   None   |
-|   3   | None; automatically charges |  |       2.5s      |   None   |
-|   4   | None; automatically charges |  |       2.5s      |   None   |
-|   5   | None; automatically charges |  |        3s       |   None   |
+|   1   | None; automatically charges | Silk Shot becomes Silk Snipe, shooting a straight line of silk |        3s       | --- |
+|   2   | None; automatically charges | Silk Shot becomes Silk Snipe, shooting a straight line of silk |        4s       | --- |
+|   3   | None; automatically charges | Silk Shot becomes Silk Snipe, shooting a straight line of silk |       5s      | --- |
+|   4   | None; automatically charges | Silk Shot becomes Silk Burst, blasting three arcing lines of silk |       6s      | --- |
+|   5   | None; automatically charges | Silk Shot becomes Silk Burst, blasting three arcing lines of silk |        6s       | --- |
 
 </details>
 
 ---
 
-### Abilities
+### Tribe Abilities
 
-There are currently 18 unique abilities in Elytras of Fire:
+There are currently 9 unique abilities in The Lost Continent:
 
 <details>
 
@@ -150,12 +150,12 @@ There are currently 18 unique abilities in Elytras of Fire:
 
 [Back to top](#)
 
-|    Ability   |                      Tribes                     | Cooldown |      Activation     |           Self Effects          |                                                                  Enemy Effects                                                                 |
-|:------------:|:-----------------------------------------------:|:--------:|:-------------------:|:-------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------:|
-| Frost Breath |                     [HiveWings](#hivewings)                    |    10s   | Sneak + Right-click |               None              |                           [Frostbite](#frostbite) (∞)<br>Mining Fatigue 2 (5s)<br>Slowness 2 (5s)<br>Weakness 1 (5s)                           |
-| Flame Breath | [LeafWings](#leafwings)<br>[NightWings](#nightwings)<br>[SandWings](#sandwings)<br>[SkyWings](#skywings) |    10s   | Sneak + Right-click | Removes [Frostbite](#frostbite) |                                              Ignites those hit<br>Removes [Frostbite](#frostbite)                                              |
-|  Venom Shot  |                    [RainWings](#rainwings)                    |    10s   | Sneak + Right-click |               None              |                                                                  Wither 3 (3s)                                                                 |
-|  Tidal Wave  |                     [SilkWings](#silkwings)                    |    10s   | Sneak + Right-click |               None              | Mining Fatigue 1 (4s)<br>Slowness 1 (4s)<br><br>**[Torrent](#torrent-1) 1:**<br>Poison 2 (3s)<br><br>**[Torrent](#torrent-1) 2:**<br>Poison 4 (3s) |
+|    Ability   |          Tribes         | Cooldown |      Activation     | Self Effects | Enemy Effects |
+|:------------:|:-----------------------:|:--------:|:-------------------:|:------------:|:-------------:|
+|  Acid Spray  | [HiveWings](#hivewings) |    10s   | Sneak + Right-click | --- | Wither 3 (2s)<br>Nausea 1 (8s) |
+|  Fury Shift  | [LeafWings](#leafwings) |    10s   | Sneak + Right-click | --- | **Poison Dart Mode:**<br>Poison 2 (3s)<br><br>**Sap Sling Mode:**<br>Slowness 3 (4s)<br>Weakness 1 (4s) |
+|  Fury Shift  | [LeafWings](#leafwings) | --- | Right-click | Toggles between Poison Dart mode and Sap Sling mode | --- |
+|   Silk Shot  | [SilkWings](#silkwings) |    10s   | Sneak + Right-click | Consumes 3 charges of Silk Spinner | **Silk Snipe:**<br>Slowness 3 (4s)<br>Mining Fatigue 1 (4s)<br><br>**Silk Burst:**<br>Slowness 3 (4s)<br>Mining Fatigue 2 (4s) |
 
 </details>
 
@@ -165,17 +165,11 @@ There are currently 18 unique abilities in Elytras of Fire:
 
 [Back to top](#)
 
-|      Ability     |   Tribes   | Cooldown |  Activation |                                Self Effects                               |        Enemy Effects        |
-|:----------------:|:----------:|:--------:|:-----------:|:-------------------------------------------------------------------------:|:---------------------------:|
-|  Serrated Strike |  [HiveWings](#hivewings)  |    24s   | Right-click |                     Strength 2 (10s)<br>Speed 1 (10s)                     | [Frostbite](#frostbite) (∞) |
-|    Terrashock    |  [LeafWings](#leafwings)  |    24s   | Right-click |        Absorption 1 (10s)<br>Resistance 1 (10s)<br>Strength 3 (10s)       |       Slowness 1 (6s)       |
-|   Shade Shackle  | [NightWings](#nightwings) |   None   |     Hold    |                          Blindness<br>Slowness 3                          |   Blindness<br>Slowness 3   |
-|    Overgrowth    |  [RainWings](#rainwings) |    24s   | Right-click |                             Resistance 2 (8s)                             |       Slowness 2 (8s)       |
-|   Desert Storm   |  [SandWings](#sandwings) |    24s   | Right-click |                     Strength 2 (10s)<br>Speed 3 (10s)                     |        Blindness (6s)       |
-| Ocean's Blessing |  [SilkWings](#silkwings)  |   None   |     Hold    |                                Speed 2 (3s)                               |             None            |
-|     Sky Surge    |  [SkyWings](#skywings)  |    24s   | Right-click |                    Strength 3 (8s)<br>Resistance 1 (8s)                   |             None            |
-
-<sup>4</sup>: Gives Slowness 2 from 6-10 meters away.
+|  Ability  |          Tribes         |  Cooldown |  Activation | Self Effects | Enemy Effects |
+|:---------:|:-----------------------:|:---------:|:-----------:|:------------:|:-------------:|
+| Hive Mind | [HiveWings](#hivewings) |    24s    | Right-click | Strength 2 (6s)<br><br>**[Hive Mind](#hive-mind) 1:**<br>Speed 2 (6s)<br><br>**[Hive Mind](#hive-mind) 2:**<br>Speed 3 (6s)<br><br>**[Hive Mind](#hive-mind) 3:**<br>Speed 3 (6s)<br>Nearby HiveWings gain Strength 2 (6s) | --- |
+| Leafspeak | [LeafWings](#leafwings) |    24s    | Right-click | Resistance 1 (6s) | Summons 3 Poison Points randomly placed within a short radius, each lasting for 8 seconds |
+|   Sense   | [SilkWings](#silkwings) |    ---    |     Hold    | Creates aural and visual indicators detecting nearby enemies, growing in frequency with proximity | --- |
 
 </details>
 
@@ -185,23 +179,20 @@ There are currently 18 unique abilities in Elytras of Fire:
 
 [Back to top](#)
 
-|     Ability     |   Tribes   | Cooldown | Activation |               Self Effects               |                                                                Enemy Effects                                                                |
-|:---------------:|:----------:|:--------:|:----------:|:----------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------:|
-| Icicle Incision |  [HiveWings](#hivewings)  |   None   |    Melee   |                   None                   | Removes [Frostbite](#frostbite)<br><br>**On Non-Frostbitten Enemies:**<br>Poison 3 (1s)<br><br>**On Frostbitten Enemies:**<br>Wither 2 (3s) |
-|    Leaf Swipe    |  [LeafWings](#leafwings)  |    12s   |    Melee   |                   None                   |                                                      Slowness 1 (6s)<br>Weakness 1 (4s)                                                     |
-|   Premonition   | [NightWings](#nightwings) |    20s   |    Melee   | Blocks all incoming<br>projectiles (10s) |                                                                     None                                                                    |
-|     Soul Sap    |  [RainWings](#rainwings) |    20s   |    Melee   |            Regeneration 3 (2s)           |                                                                     None                                                                    |
-|   Toxin Slash   |  [SandWings](#sandwings) |   None   |    Melee   |                   None                   |                                                                Poison 1 (4s)                                                                |
-|    Tail Flail   |  [SilkWings](#silkwings)  |    12s   |    Melee   |                   None                   |                                      Blindness (4s)<br><br>**[Torrent](#torrent-1) 2:**<br>Blindness (7s)                                     |
-|   Spark Punch   |  [SkyWings](#skywings)  |   None   |    Melee   |                   None                   |                                   **Spark Mode:**<br>Ignites those hit<br>Removes [Frostbite](#frostbite)                                   |
+|    Ability   |          Tribes         |  Cooldown | Activation | Self Effects | Enemy Effects |
+|:------------:|:-----------------------:|:---------:|:----------:|:------------:|:-------------:|
+| Sting Strike | [HiveWings](#hivewings) |    ---    |    Melee   | --- | --- |
+|  Venom Aura  | [LeafWings](#leafwings) |    12s    |    Melee   | --- | --- |
+|    Webbing   | [SilkWings](#silkwings) |    12s    |    Melee   | --- | Slowness 3 (6s)<br>[Entangled](#entangled) (6s) |
+|    Webbing   | [SilkWings](#silkwings) |    ---    |     Hold   | Silk Spinner charges 33% faster | --- |
 
 </details>
 
 ---
 
-### Custom Effects
+### Custom Effects and Interactions
 
-There are currently 3 custom effects in Elytras of Fire:
+There are currently 3 custom effects and interactions in The Lost Continent:
 
 <details>
 
@@ -209,39 +200,38 @@ There are currently 3 custom effects in Elytras of Fire:
 
 [Back to top](#)
 
-#### Frostbite
+#### Entangled
 
-Frostbite is a custom effect that doesn't do anything on its own; however, it has special interactions with other abilities.
+Entangled is a custom effect that forces those affected by it to leave a path of [Web Trails](#web-trails).
 
 |            Ability            | Level |             Interaction            |
 |:-----------------------------:|:-----:|:----------------------------------:|
-|   [Frost Breath](#abilities)  |   1   |        Applies Frostbite (∞)       |
-|   [Flame Breath](#abilities)  |   1   |          Removes Frostbite         |
-| [Serrated Strike](#abilities) |   1   |        Applies Frostbite (∞)       |
-| [Icicle Incision](#abilities) |   1   | Wither 2 (3s)<br>Removes Frostbite |
+| [Webbing](#tribe-abilities) | 1 | Applies Entangled (6s) |
 
-#### Torrent
+</details>
 
-Torrent is a custom effect that makes the user deal greater and greater damage the lower the user's health is. It also has special interactions with certain abilities.
+<details>
 
-| Torrent Level | Health Threshold | Damage Increase |
-|:-------------:|:----------------:|:---------------:|
-|       1       |     7 hearts     |        +3       |
-|       2       |     4 hearts     |        +6       |
+**<summary> Custom Interactions </summary>**
 
-| Torrent Level |   Ability  |  Interaction  |
-|:-----:|:----------:|:-------------:|
-|   1   | [Tidal Wave](#abilities) | Poison 2 (3s) |
-|   1   | [Tidal Wave](#abilities) | Poison 4 (3s) |
-|   1   | [Tail Flail](#abilities) | Blindness (7s) |
+[Back to top](#)
 
-#### Photosynthesis
+#### Web Trails
 
-Photosynthesis is a custom effect that increases the users movement speed in water immensely and gives a slow regeneration buff. Taking any damage while Photosynthesis is active will deactivate it until obtained again.
+Web Trails are small blobs of silk left behind by those affected by Entangled. While most tribes caught in them will be negatively affected, SilkWings can use these webs to gain special buffs.
 
-| Photosynthesis Level |                                               Effects                                               |
-|:-------------------:|:---------------------------------------------------------------------------------------------------:|
-|          1          | Dolphin's Grace (1s) while swimming<br>Speed 4 (4s) while swimming<br>Regeneration 1 (3s) every 15s |
+|            Tribe            |             Interaction            |
+|:-----------------------------:|:----------------------------------:|
+| Non-SilkWings | **When in a Web Trail:**<br>Slowness 2 (3s) |
+| SilkWings | **When in a Web Trail:**<br>Speed 3 (3s)<br>Silk Spinner charges 20% faster |
+
+#### Poison Points
+
+Poison Points are decently-sized pools of toxins that inflict nasty effects on those who wander into them.
+
+|            Tribe            |             Interaction            |
+|:-----------------------------:|:----------------------------------:|
+| Non-LeafWings | **When in a Poison Point:**<br>Poison 4 (2s)<br>Slowness 2 (2s) |
 
 </details>
 
@@ -253,7 +243,7 @@ Photosynthesis is a custom effect that increases the users movement speed in wat
 
 ### Abilities
 
-Arguably one of the most major parts of Elytras of Fire, abilities will be coming soon!
+Arguably one of the most major parts of The Lost Continent, abilities will be coming soon!
 
 ---
 
@@ -263,7 +253,7 @@ Arguably one of the most major parts of Elytras of Fire, abilities will be comin
 
 ### IMP Compliance
 
-The following features of Elytras of Fire are listed to prove [IMP compliance](https://github.com/Arcensoth/imp-spec), which are a set of suggested guidelines for Minecraft datapacks that ensure quality, compatibility, and optimal user and development experience.
+The following features of The Lost Continent are listed to prove [IMP compliance](https://github.com/Arcensoth/imp-spec), which are a set of suggested guidelines for Minecraft datapacks that ensure quality, compatibility, and optimal user and development experience.
 
 > Core Standards: [Leave vanilla alone](https://github.com/Arcensoth/imp-spec/blob/master/docs/imp_core.md#1-leave-vanilla-alone)
 
@@ -271,10 +261,10 @@ No changes are made to the **`minecraft`** namespace.
 
 > Core Standards: [Namespace everything](https://github.com/Arcensoth/imp-spec/blob/master/docs/imp_core.md#2-namespace-everything)
 
-All entity tags, custom items, scoreboard objectives, and storages used in Elytras of Fire use the following namespaces to clarify association with Elytras of Fire:
+All entity tags, custom items, scoreboard objectives, and storages used in The Lost Continent use the following namespaces to clarify association with Elytras of Fire:
 
 - **`eoflib`**
-- **`eof`**
+- **`tlc`**
 
 > Documentation: [Function headers](https://github.com/Arcensoth/imp-spec/blob/master/docs/imp_doc.md#function-headers)
 
