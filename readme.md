@@ -10,22 +10,28 @@ This DLC depends on [Elytras of Fire Lib](https://github.com/iHeronGH/Elytras-of
 
 ## Table of Contents
 
-- [Installation and Uninstallation](#installation-and-uninstallation)
-- [Features](#features)
-  - [Tribes](#tribes)
-    - [HiveWings](#hivewings)
-    - [LeafWings](#leafwings)
-    - [SilkWings](#silkwings)
-  - [Passives](#passives)
-    - [Hive Mind](#hive-mind)
-    - [Photosynthesis](#photosynthesis)
-    - [Silk Spinner](#silk-spinner)
-  - [Abilities](#tribe-abilities)
-  - [Custom Effects and Interactions](#custom-effects-and-interactions)
-- [Planned Features](#planned-features)
-  - [Abilities](#abilities)
-- [Other Qualities](#other-qualities)
-  - [IMP Compliance](#imp-compliance)
+- [The Lost Continent](#the-lost-continent)
+  - [Welcome!](#welcome)
+  - [Table of Contents](#table-of-contents)
+  - [Installation and Uninstallation](#installation-and-uninstallation)
+  - [Features](#features)
+    - [Tribes](#tribes)
+      - [HiveWings](#hivewings)
+      - [LeafWings](#leafwings)
+      - [SilkWings](#silkwings)
+    - [Passives](#passives)
+      - [Hive Mind](#hive-mind)
+      - [Photosynthesis](#photosynthesis)
+      - [Silk Spinner](#silk-spinner)
+  - [Planned Features](#planned-features)
+    - [Tribe Abilities](#tribe-abilities)
+    - [Custom Effects](#custom-effects)
+      - [Entangled](#entangled)
+    - [Custom Interactions](#custom-interactions)
+      - [Poison Points](#poison-points)
+      - [Web Trails](#web-trails)
+  - [Other Qualities](#other-qualities)
+    - [IMP Compliance](#imp-compliance)
 
 ---
 
@@ -43,7 +49,7 @@ And uninstalling The Lost Continent is even simpler:
 
 1. Run the command **`/function tlc:uninstall`**. This will uninstall The Lost Continent, completely removing all elements that it uses\* without affecting any other non-dependent DLCs. And that's it!
 
-    *\*Always double-check that this DLC uninstalled correctly! The Lost Continent does its best to remove itself and its dependencies; if you find that it did not, please [report it as a bug](https://docs.google.com/forms/d/e/1FAIpQLSfm4wEvcERhBCxIhuzV7Gi4yX_sYCBn8zpUE2acBfyOEFW7OA/viewform?usp=sf_link) on Google Forms or [create an issue](https://github.com/iHeronGH/The-Lost-Continent/issues) over on Github.*
+ *\*Always double-check that this DLC uninstalled correctly! The Lost Continent does its best to remove itself and its dependencies; if you find that it did not, please [report it as a bug](https://docs.google.com/forms/d/e/1FAIpQLSfm4wEvcERhBCxIhuzV7Gi4yX_sYCBn8zpUE2acBfyOEFW7OA/viewform?usp=sf_link) on Google Forms or [create an issue](https://github.com/iHeronGH/The-Lost-Continent/issues) over on Github.*
 
 ---
 
@@ -53,7 +59,7 @@ And uninstalling The Lost Continent is even simpler:
 
 ### Tribes
 
-There are currently 3 tribes in The Lost Continent:
+The Lost Continent comes with 3 tribes:
 
 <details>
 
@@ -71,6 +77,10 @@ Primary Ability: [Acid Spray](#tribe-abilities)<br>
 Secondary Ability: [Hive Mind](#tribe-abilities)<br>
 Tertiary Ability: [Sting Strike](#tribe-abilities)
 
+Innate Attributes:
+
+- Strength 2
+
 #### LeafWings
 
 > *"The LeafWings are the epitome of adaptation. Having lost their forest homes to a savage war, they've honed their affinity for nature over thousands of years in the form of Leafspeak, and by using this they can converse with and command flora to uncanny degrees."*
@@ -80,6 +90,11 @@ Passive Abilities: [Photosynthesis](#photosynthesis)<br>
 Primary Ability: [Fury Shift](#tribe-abilities)<br>
 Secondary Ability: [Leafspeak](#tribe-abilities)<br>
 Tertiary Ability: [Venom Aura](#tribe-abilities)
+
+Innate Attributes:
+
+- Speed 1
+- Strength 1
 
 #### SilkWings
 
@@ -91,13 +106,17 @@ Primary Ability: [Silk Shot](#tribe-abilities)<br>
 Secondary Ability: [Sense](#tribe-abilities)<br>
 Tertiary Ability: [Webbing](#tribe-abilities)
 
+Innate Attributes:
+
+- Speed 2
+
 </details>
 
 ---
 
 ### Passives
 
-There are currently 3 passive abilities in The Lost Continent:
+The Lost Continent comes with 3 passive abilities:
 
 <details>
 
@@ -109,40 +128,46 @@ There are currently 3 passive abilities in The Lost Continent:
 
 Hive Mind is a [HiveWing](#hivewings) passive ability. It gives varying effects depending on how many other HiveWings are around the user.
 
-| Level |     Activation     |              Effect             | Charge Duration | Cooldown |
-|:-----:|:------------------:|:-------------------------------:|:---------------:|:--------:|
-|   1   |  2 nearby HiveWing |           Speed 1 (1s)          | --- | --- |
-|   2   | 3 nearby HiveWings |           Speed 2 (1s)          | --- | --- |
-|   3   | 4 nearby HiveWings | Speed 2 (1s)<br>Strength 1 (1s) | --- | --- |
+| Level |     Activation     |             Effect              | Charge Duration | Cooldown |
+| :---: | :----------------: | :-----------------------------: | :-------------: | :------: |
+|   1   | 2 nearby HiveWings |          Speed 1 (1s)           |       ---       |   ---    |
+|   2   | 3 nearby HiveWings |          Speed 2 (1s)           |       ---       |   ---    |
+|   3   | 4 nearby HiveWings | Speed 2 (1s)<br>Strength 1 (1s) |       ---       |   ---    |
 
 #### Photosynthesis
 
 Photosynthesis is a [LeafWing](#leafwings) passive ability. It gives variable levels of Regeneration depending on the time of day.
 
-| Level |                     Activation                     |        Effect       | Charge Duration | Cooldown |
-|:-----:|:--------------------------------------------------:|:-------------------:|:---------------:|:--------:|
-|   1   |    Time is between dawn (24000) and dusk (12000)   | Regeneration 1 (2s) | --- |    20s   |
-|   2   | Time is between sunrise (21600) and sunset (14400) | Regeneration 2 (3s) | --- |    20s   |
+| Level |             Activation             |       Effect        | Charge Duration | Cooldown |
+| :---: | :--------------------------------: | :-----------------: | :-------------: | :------: |
+|   1   |   Time is between dawn and dusk    | Regeneration 1 (2s) |       ---       |   20s    |
+|   2   | Time is between sunrise and sunset | Regeneration 2 (3s) |       ---       |   20s    |
 
 #### Silk Spinner
 
-Silk Spinner is a [SilkWing](#silkwings) passive ability. It changes the effects of some abilities depending on its level of charge, and can have its charge rate increased by different means.
+Silk Spinner is a [SilkWing](#silkwings) passive ability. It has special interactions with certain abilities and can have its charge rate increased by different means.
 
-| Level |          Activation         | Effect | Charge Duration | Cooldown |
-|:-----:|:---------------------------:|:------:|:---------------:|:--------:|
-|   1   | None; automatically charges | Silk Shot becomes Silk Snipe, shooting a straight line of silk |        3s       | --- |
-|   2   | None; automatically charges | Silk Shot becomes Silk Snipe, shooting a straight line of silk |        4s       | --- |
-|   3   | None; automatically charges | Silk Shot becomes Silk Snipe, shooting a straight line of silk |       5s      | --- |
-|   4   | None; automatically charges | Silk Shot becomes Silk Burst, blasting three arcing lines of silk |       6s      | --- |
-|   5   | None; automatically charges | Silk Shot becomes Silk Burst, blasting three arcing lines of silk |        6s       | --- |
+| Level |      Activation       |                              Effect                               | Charge Duration | Cooldown |
+| :---: | :-------------------: | :---------------------------------------------------------------: | :-------------: | :------: |
+|   1   | Charges automatically |  Silk Shot becomes Silk Snipe, shooting a straight line of silk   |       3s        |   ---    |
+|   2   | Charges automatically |  Silk Shot becomes Silk Snipe, shooting a straight line of silk   |       4s        |   ---    |
+|   3   | Charges automatically |  Silk Shot becomes Silk Snipe, shooting a straight line of silk   |       5s        |   ---    |
+|   4   | Charges automatically | Silk Shot becomes Silk Burst, blasting three arcing lines of silk |       6s        |   ---    |
+|   5   | Charges automatically | Silk Shot becomes Silk Burst, blasting three arcing lines of silk |       6s        |   ---    |
 
 </details>
 
 ---
 
+## Planned Features
+
+[Back to top](#)
+
+---
+
 ### Tribe Abilities
 
-There are currently 9 unique abilities in The Lost Continent:
+There are currently 9 unique abilities planned to be in The Lost Continent:
 
 <details>
 
@@ -150,12 +175,12 @@ There are currently 9 unique abilities in The Lost Continent:
 
 [Back to top](#)
 
-|    Ability   |          Tribes         | Cooldown |      Activation     | Self Effects | Enemy Effects |
-|:------------:|:-----------------------:|:--------:|:-------------------:|:------------:|:-------------:|
-|  Acid Spray  | [HiveWings](#hivewings) |    10s   | Sneak + Right-click | --- | Wither 3 (2s)<br>Nausea 1 (8s) |
-|  Fury Shift  | [LeafWings](#leafwings) |    10s   | Sneak + Right-click | --- | **Poison Dart Mode:**<br>Poison 2 (3s)<br><br>**Sap Sling Mode:**<br>Slowness 3 (4s)<br>Weakness 1 (4s) |
-|  Fury Shift  | [LeafWings](#leafwings) | --- | Right-click | Toggles between Poison Dart mode and Sap Sling mode | --- |
-|   Silk Shot  | [SilkWings](#silkwings) |    10s   | Sneak + Right-click | Consumes 3 charges of Silk Spinner | **Silk Snipe:**<br>Slowness 3 (4s)<br>Mining Fatigue 1 (4s)<br><br>**Silk Burst:**<br>Slowness 3 (4s)<br>Mining Fatigue 2 (4s) |
+|  Ability   |         Tribes          | Cooldown |     Activation      |                    Self Effects                     |                                                         Enemy Effects                                                          |
+| :--------: | :---------------------: | :------: | :-----------------: | :-------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------: |
+| Acid Spray | [HiveWings](#hivewings) |   10s    | Sneak + Right-click |                         ---                         |                                                 Wither 3 (2s)<br>Nausea 1 (8s)                                                 |
+| Fury Shift | [LeafWings](#leafwings) |   10s    | Sneak + Right-click |                         ---                         |            **Poison Dart Mode:**<br>Poison 2 (3s)<br><br>**Sap Sling Mode:**<br>Slowness 3 (4s)<br>Weakness 1 (4s)             |
+| Fury Shift | [LeafWings](#leafwings) |   ---    |     Right-click     | Toggles between Poison Dart mode and Sap Sling mode |                                                              ---                                                               |
+| Silk Shot  | [SilkWings](#silkwings) |   10s    | Sneak + Right-click |         Consumes 3 charges of Silk Spinner          | **Silk Snipe:**<br>Slowness 3 (4s)<br>Mining Fatigue 1 (4s)<br><br>**Silk Burst:**<br>Slowness 3 (4s)<br>Mining Fatigue 2 (4s) |
 
 </details>
 
@@ -165,11 +190,11 @@ There are currently 9 unique abilities in The Lost Continent:
 
 [Back to top](#)
 
-|  Ability  |          Tribes         |  Cooldown |  Activation | Self Effects | Enemy Effects |
-|:---------:|:-----------------------:|:---------:|:-----------:|:------------:|:-------------:|
-| Hive Mind | [HiveWings](#hivewings) |    24s    | Right-click | Strength 2 (6s)<br><br>**[Hive Mind](#hive-mind) 1:**<br>Speed 2 (6s)<br><br>**[Hive Mind](#hive-mind) 2:**<br>Speed 3 (6s)<br><br>**[Hive Mind](#hive-mind) 3:**<br>Speed 3 (6s)<br>Nearby HiveWings gain Strength 2 (6s) | --- |
-| Leafspeak | [LeafWings](#leafwings) |    24s    | Right-click | Resistance 1 (6s) | Summons 3 Poison Points randomly placed within a short radius, each lasting for 8 seconds |
-|   Sense   | [SilkWings](#silkwings) |    ---    |     Hold    | Creates aural and visual indicators detecting nearby enemies, growing in frequency with proximity | --- |
+|  Ability  |         Tribes          | Cooldown | Activation  |                                                                                                        Self Effects                                                                                                        |                                       Enemy Effects                                       |
+| :-------: | :---------------------: | :------: | :---------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: |
+| Hive Mind | [HiveWings](#hivewings) |   24s    | Right-click | Strength 2 (6s)<br><br>**[Hive Mind](#hive-mind) 1:**<br>Speed 2 (6s)<br><br>**[Hive Mind](#hive-mind) 2:**<br>Speed 3 (6s)<br><br>**[Hive Mind](#hive-mind) 3:**<br>Speed 3 (6s)<br>Nearby HiveWings gain Strength 2 (6s) |                                            ---                                            |
+| Leafspeak | [LeafWings](#leafwings) |   24s    | Right-click |                                                                                                     Resistance 1 (6s)                                                                                                      | Summons 3 Poison Points randomly placed within a short radius, each lasting for 8 seconds |
+|   Sense   | [SilkWings](#silkwings) |   ---    |    Hold     |                                                             Creates aural and visual indicators detecting nearby enemies, growing in frequency with proximity                                                              |                                            ---                                            |
 
 </details>
 
@@ -179,20 +204,20 @@ There are currently 9 unique abilities in The Lost Continent:
 
 [Back to top](#)
 
-|    Ability   |          Tribes         |  Cooldown | Activation | Self Effects | Enemy Effects |
-|:------------:|:-----------------------:|:---------:|:----------:|:------------:|:-------------:|
-| Sting Strike | [HiveWings](#hivewings) |    ---    |    Melee   | --- | --- |
-|  Venom Aura  | [LeafWings](#leafwings) |    12s    |    Melee   | --- | --- |
-|    Webbing   | [SilkWings](#silkwings) |    12s    |    Melee   | --- | Slowness 3 (6s)<br>[Entangled](#entangled) (6s) |
-|    Webbing   | [SilkWings](#silkwings) |    ---    |     Hold   | Silk Spinner charges 33% faster | --- |
+|   Ability    |         Tribes          | Cooldown | Activation |          Self Effects           |                      Enemy Effects                      |
+| :----------: | :---------------------: | :------: | :--------: | :-----------------------------: | :-----------------------------------------------------: |
+| Sting Strike | [HiveWings](#hivewings) |   40s    |   Melee    |               ---               | **Paralysis Mode:**<br>Slowness 5 (8s)<br><br>**:**<br> |
+|  Venom Aura  | [LeafWings](#leafwings) |   12s    |   Melee    |               ---               |                           ---                           |
+|   Webbing    | [SilkWings](#silkwings) |   12s    |   Melee    |               ---               |     Slowness 3 (6s)<br>[Entangled](#entangled) (6s)     |
+|   Webbing    | [SilkWings](#silkwings) |   ---    |    Hold    | Silk Spinner charges 33% faster |                           ---                           |
 
 </details>
 
 ---
 
-### Custom Effects and Interactions
+### Custom Effects
 
-There are currently 3 custom effects and interactions in The Lost Continent:
+There is currently 1 custom effect planned to be in The Lost Continent:
 
 <details>
 
@@ -204,11 +229,17 @@ There are currently 3 custom effects and interactions in The Lost Continent:
 
 Entangled is a custom effect that forces those affected by it to leave a path of [Web Trails](#web-trails).
 
-|            Ability            | Level |             Interaction            |
-|:-----------------------------:|:-----:|:----------------------------------:|
-| [Webbing](#tribe-abilities) | 1 | Applies Entangled (6s) |
+|           Ability           | Level |      Interaction       |
+| :-------------------------: | :---: | :--------------------: |
+| [Webbing](#tribe-abilities) |   1   | Applies Entangled (6s) |
 
 </details>
+
+---
+
+### Custom Interactions
+
+There are currently 2 custom interactions planned to be in The Lost Continent:
 
 <details>
 
@@ -216,34 +247,24 @@ Entangled is a custom effect that forces those affected by it to leave a path of
 
 [Back to top](#)
 
-#### Web Trails
-
-Web Trails are small blobs of silk left behind by those affected by Entangled. While most tribes caught in them will be negatively affected, SilkWings can use these webs to gain special buffs.
-
-|            Tribe            |             Interaction            |
-|:-----------------------------:|:----------------------------------:|
-| Non-SilkWings | **When in a Web Trail:**<br>Slowness 2 (3s) |
-| SilkWings | **When in a Web Trail:**<br>Speed 3 (3s)<br>Silk Spinner charges 20% faster |
-
 #### Poison Points
 
 Poison Points are decently-sized pools of toxins that inflict nasty effects on those who wander into them.
 
-|            Tribe            |             Interaction            |
-|:-----------------------------:|:----------------------------------:|
-| Non-LeafWings | **When in a Poison Point:**<br>Poison 4 (2s)<br>Slowness 2 (2s) |
+|     Tribe     |           Interaction            |
+| :-----------: | :------------------------------: |
+| Non-LeafWings | Poison 4 (2s)<br>Slowness 2 (2s) |
+
+#### Web Trails
+
+Web Trails are small blobs of silk left behind by those affected by Entangled. While most tribes caught in them will be negatively affected, SilkWings can use these webs to gain special buffs.
+
+|     Tribe     |                   Interaction                   |
+| :-----------: | :---------------------------------------------: |
+| Non-SilkWings |                 Slowness 2 (3s)                 |
+|   SilkWings   | Speed 3 (3s)<br>Silk Spinner charges 20% faster |
 
 </details>
-
----
-
-## Planned Features
-
-[Back to top](#)
-
-### Abilities
-
-Arguably one of the most major parts of The Lost Continent, abilities will be coming soon!
 
 ---
 
@@ -257,7 +278,7 @@ The following features of The Lost Continent are listed to prove [IMP compliance
 
 > Core Standards: [Leave vanilla alone](https://github.com/Arcensoth/imp-spec/blob/master/docs/imp_core.md#1-leave-vanilla-alone)
 
-No changes are made to the **`minecraft`** namespace.
+No overwriting changes are made to the **`minecraft`** namespace.
 
 > Core Standards: [Namespace everything](https://github.com/Arcensoth/imp-spec/blob/master/docs/imp_core.md#2-namespace-everything)
 
