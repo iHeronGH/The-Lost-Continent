@@ -11,15 +11,6 @@
 					"name": "#tlc.passives.synchrosocial.3"
 				},
 				"scale": 1
-			},
-			"max": {
-				"type": "minecraft:score",
-				"score": "tlc.passives.synchrosocial",
-				"target": {
-					"type": "minecraft:fixed",
-					"name": "#tlc.passives.synchrosocial.3"
-				},
-				"scale": 1
 			}
 		}
 	}
