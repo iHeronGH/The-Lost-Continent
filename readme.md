@@ -138,9 +138,9 @@ Synchrosocial is a [HiveWing](#hivewings) passive ability. It gives varying leve
 
 Photosynthesis is a [LeafWing](#leafwings) passive ability. It gives variable levels of Regeneration depending on the time of day.
 
-| Level |             Activation             |                  Effect                  | Charge Duration | Cooldown |
-| :---: | :--------------------------------: | :--------------------------------------: | :-------------: | :------: |
-|   1   |   Time is between dawn and dusk    |           Regeneration 2 (2s)            |       ---       |   20s    |
+| Level |          Activation           |       Effect        | Charge Duration | Cooldown |
+| :---: | :---------------------------: | :-----------------: | :-------------: | :------: |
+|   1   | Time is between dawn and dusk | Regeneration 2 (2s) |       ---       |   20s    |
 
 #### Silk Spinner
 
@@ -203,12 +203,13 @@ There are currently 9 unique abilities planned to be in The Lost Continent:
 
 [Back to top](#)
 
-|   Ability    |         Tribes          | Cooldown | Activation |          Self Effects           |                      Enemy Effects                      |
-| :----------: | :---------------------: | :------: | :--------: | :-----------------------------: | :-----------------------------------------------------: |
-| Sting Strike | [HiveWings](#hivewings) |   40s    |   Melee    |               ---               | **Paralysis Mode:**<br>Slowness 5 (8s)<br><br>**:**<br> |
-|  Venom Aura  | [LeafWings](#leafwings) |   12s    |   Melee    |               ---               |                           ---                           |
-|   Webbing    | [SilkWings](#silkwings) |   12s    |   Melee    |               ---               |     Slowness 3 (6s)<br>[Entangled](#entangled) (6s)     |
-|   Webbing    | [SilkWings](#silkwings) |   ---    |    Hold    | Silk Spinner charges 33% faster |                           ---                           |
+|   Ability    |         Tribes          | Cooldown | Activation  |                  Self Effects                  |                                                     Enemy Effects                                                     |
+| :----------: | :---------------------: | :------: | :---------: | :--------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------: |
+| Sting Strike | [HiveWings](#hivewings) |   40s    |    Melee    |                      ---                       | **Paralysis Mode:**<br>Slowness 5 (8s)<br>Weakness 2 (8s)<br><br>**Poison Mode:**<br>Poison 4 (8s)<br>Weakness 2 (5s) |
+| Sting Strike | [HiveWings](#hivewings) |   ---    | Right-click | Toggles between Paralysis mode and Poison mode |                                                          ---                                                          |
+|  Venom Aura  | [LeafWings](#leafwings) |   12s    |    Melee    |                      ---                       |                                                          ---                                                          |
+|   Webbing    | [SilkWings](#silkwings) |   12s    |    Melee    |                      ---                       |                                    Slowness 3 (6s)<br>[Entangled](#entangled) (6s)                                    |
+|   Webbing    | [SilkWings](#silkwings) |   ---    |    Hold     |        Silk Spinner charges 33% faster         |                                                          ---                                                          |
 
 </details>
 
