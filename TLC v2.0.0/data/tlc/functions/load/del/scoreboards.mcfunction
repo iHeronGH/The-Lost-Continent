@@ -1,9 +1,12 @@
 #> tlc:load/del/scoreboards
 #
-# Removes essential scoreboards for The Lost Continent.
+# Delete scoreboards from The Lost Continent.
 
 #region
-	# Test
-tellraw @s "Unimplemented function component."
+	# Scoreboards
+		## Passive Objectives
+scoreboard objectives remove tlc.passives.synchrosocial
+scoreboard objectives remove tlc.passives.photosynthesis
+scoreboard objectives remove tlc.passives.silk_spinner
 
 #endregion

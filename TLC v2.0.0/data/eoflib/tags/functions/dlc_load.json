@@ -1,6 +1,7 @@
 {
 	"replace": false,
 	"values": [
+		"tlc:load/gen/bossbars",
 		"tlc:load/gen/scoreboards",
 		"tlc:load/gen/storage",
 		"tlc:load/gen/teams"

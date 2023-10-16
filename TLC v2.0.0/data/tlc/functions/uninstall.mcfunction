@@ -6,7 +6,7 @@ clear @a #eoflib:items{eoflib: {}}
 function eoflib:load/del/forceloads
 function eoflib:load/del/scoreboards
 function eoflib:load/del/storage
-function eof:load/del/teams
+function tlc:load/del/teams
 
 	# Announce Removal
 		## Player-prompted delete message

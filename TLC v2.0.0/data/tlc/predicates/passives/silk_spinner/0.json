@@ -1,0 +1,10 @@
+{
+	"condition": "minecraft:entity_scores",
+	"entity": "this",
+	"scores": {
+		"tlc.passives.silk_spinner": {
+			"min": 0,
+			"max": 899
+		}
+	}
+}

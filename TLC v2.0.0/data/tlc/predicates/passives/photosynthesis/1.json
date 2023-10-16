@@ -15,10 +15,10 @@
 				},
 				"max": {
 					"type": "minecraft:score",
-					"score": "eoflib.worldtime",
+					"score": "eoflib.numbers",
 					"target": {
 						"type": "minecraft:fixed",
-						"name": "#eoflib.worldtime.dawn"
+						"name": "#eoflib.23999"
 					},
 					"scale": 1
 				}
@@ -29,7 +29,7 @@
 			"value": {
 				"min": {
 					"type": "minecraft:score",
-					"score": "eof.nums",
+					"score": "eoflib.numbers",
 					"target": {
 						"type": "minecraft:fixed",
 						"name": "#eoflib.0"
@@ -46,6 +46,6 @@
 					"scale": 1
 				}
 			}
-		}		
+		}
 	]
 }

@@ -1,6 +1,7 @@
 {
 	"replace": false,
 	"values": [
+		"tlc:load/del/bossbars",
 		"tlc:load/del/scoreboards",
 		"tlc:load/del/storage",
 		"tlc:load/del/teams"
