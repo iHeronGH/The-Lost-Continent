@@ -72,7 +72,7 @@ The Lost Continent comes with 3 tribes:
 > *"The HiveWings are a cooperative bunch, able to work together in unison to accomplish great things. Between the wicked stingers they wield and the foul stench they can weaponize, even alone they are ferocious combatants, but together they are unstoppable."*
 > *\- C*
 
-Passive Abilities: [Hive Mind](#synchrosocial)<br>
+Passive Abilities: [Synchrosocial](#synchrosocial)<br>
 Primary Ability: [Acid Spray](#tribe-abilities)<br>
 Secondary Ability: [Hive Mind](#tribe-abilities)<br>
 Tertiary Ability: [Sting Strike](#tribe-abilities)
