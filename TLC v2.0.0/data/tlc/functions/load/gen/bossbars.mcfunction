@@ -53,4 +53,11 @@ bossbar set tlc:passive/silk_spinner/5 color white
 # bossbar set tlc:passive/silk_spinner/5 players @a[predicate=tlc:tribes/silkwings, tag=eoflib.atts, scores={tlc.passives.silk_spinner=360..479}]
 # bossbar set tlc:passive/silk_spinner/5 players @a[predicate=tlc:tribes/silkwings, tag=eoflib.atts, scores={tlc.passives.silk_spinner=480}]
 
+bossbar set tlc:passive/silk_spinner/0 visible false
+bossbar set tlc:passive/silk_spinner/1 visible false
+bossbar set tlc:passive/silk_spinner/2 visible false
+bossbar set tlc:passive/silk_spinner/3 visible false
+bossbar set tlc:passive/silk_spinner/4 visible false
+bossbar set tlc:passive/silk_spinner/5 visible false
+
 #endregion
