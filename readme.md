@@ -20,7 +20,7 @@ This DLC depends on [Elytras of Fire Lib](https://github.com/iHeronGH/Elytras-of
       - [LeafWings](#leafwings)
       - [SilkWings](#silkwings)
     - [Passives](#passives)
-      - [Hive Mind](#hive-mind)
+      - [Synchrosocial](#synchrosocial)
       - [Photosynthesis](#photosynthesis)
       - [Silk Spinner](#silk-spinner)
   - [Planned Features](#planned-features)
@@ -72,7 +72,7 @@ The Lost Continent comes with 3 tribes:
 > *"The HiveWings are a cooperative bunch, able to work together in unison to accomplish great things. Between the wicked stingers they wield and the foul stench they can weaponize, even alone they are ferocious combatants, but together they are unstoppable."*
 > *\- C*
 
-Passive Abilities: [Hive Mind](#hive-mind)<br>
+Passive Abilities: [Hive Mind](#synchrosocial)<br>
 Primary Ability: [Acid Spray](#tribe-abilities)<br>
 Secondary Ability: [Hive Mind](#tribe-abilities)<br>
 Tertiary Ability: [Sting Strike](#tribe-abilities)
@@ -124,24 +124,23 @@ The Lost Continent comes with 3 passive abilities:
 
 [Back to top](#)
 
-#### Hive Mind
+#### Synchrosocial
 
-Hive Mind is a [HiveWing](#hivewings) passive ability. It gives varying effects depending on how many other HiveWings are around the user.
+Synchrosocial is a [HiveWing](#hivewings) passive ability. It gives varying levels of Speed depending on how many other HiveWings are around the user.
 
-| Level |     Activation     |             Effect              | Charge Duration | Cooldown |
-| :---: | :----------------: | :-----------------------------: | :-------------: | :------: |
-|   1   | 2 nearby HiveWings |          Speed 1 (1s)           |       ---       |   ---    |
-|   2   | 3 nearby HiveWings |          Speed 2 (1s)           |       ---       |   ---    |
-|   3   | 4 nearby HiveWings | Speed 2 (1s)<br>Strength 1 (1s) |       ---       |   ---    |
+| Level |     Activation     |    Effect    | Charge Duration | Cooldown |
+| :---: | :----------------: | :----------: | :-------------: | :------: |
+|   1   | 2 nearby HiveWings | Speed 1 (1s) |       ---       |   ---    |
+|   2   | 3 nearby HiveWings | Speed 2 (3s) |       ---       |   ---    |
+|   3   | 4 nearby HiveWings | Speed 3 (5s) |       ---       |   ---    |
 
 #### Photosynthesis
 
 Photosynthesis is a [LeafWing](#leafwings) passive ability. It gives variable levels of Regeneration depending on the time of day.
 
-| Level |             Activation             |       Effect        | Charge Duration | Cooldown |
-| :---: | :--------------------------------: | :-----------------: | :-------------: | :------: |
-|   1   |   Time is between dawn and dusk    | Regeneration 1 (2s) |       ---       |   20s    |
-|   2   | Time is between sunrise and sunset | Regeneration 2 (3s) |       ---       |   20s    |
+| Level |             Activation             |                  Effect                  | Charge Duration | Cooldown |
+| :---: | :--------------------------------: | :--------------------------------------: | :-------------: | :------: |
+|   1   |   Time is between dawn and dusk    |           Regeneration 2 (2s)            |       ---       |   20s    |
 
 #### Silk Spinner
 
@@ -190,11 +189,11 @@ There are currently 9 unique abilities planned to be in The Lost Continent:
 
 [Back to top](#)
 
-|  Ability  |         Tribes          | Cooldown | Activation  |                                                                                                        Self Effects                                                                                                        |                                       Enemy Effects                                       |
-| :-------: | :---------------------: | :------: | :---------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: |
-| Hive Mind | [HiveWings](#hivewings) |   24s    | Right-click | Strength 2 (6s)<br><br>**[Hive Mind](#hive-mind) 1:**<br>Speed 2 (6s)<br><br>**[Hive Mind](#hive-mind) 2:**<br>Speed 3 (6s)<br><br>**[Hive Mind](#hive-mind) 3:**<br>Speed 3 (6s)<br>Nearby HiveWings gain Strength 2 (6s) |                                            ---                                            |
-| Leafspeak | [LeafWings](#leafwings) |   24s    | Right-click |                                                                                                     Resistance 1 (6s)                                                                                                      | Summons 3 Poison Points randomly placed within a short radius, each lasting for 8 seconds |
-|   Sense   | [SilkWings](#silkwings) |   ---    |    Hold     |                                                             Creates aural and visual indicators detecting nearby enemies, growing in frequency with proximity                                                              |                                            ---                                            |
+|  Ability  |         Tribes          | Cooldown | Activation  |                                                                                                              Self Effects                                                                                                              |                                       Enemy Effects                                       |
+| :-------: | :---------------------: | :------: | :---------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: |
+| Hive Mind | [HiveWings](#hivewings) |   24s    | Right-click | Strength 2 (6s)<br><br>**[Hive Mind](#synchrosocial) 1:**<br>Speed 2 (6s)<br><br>**[Hive Mind](#synchrosocial) 2:**<br>Speed 3 (6s)<br><br>**[Hive Mind](#synchrosocial) 3:**<br>Speed 3 (6s)<br>Nearby HiveWings gain Strength 2 (6s) |                                            ---                                            |
+| Leafspeak | [LeafWings](#leafwings) |   24s    | Right-click |                                                                                                           Resistance 1 (6s)                                                                                                            | Summons 3 Poison Points randomly placed within a short radius, each lasting for 8 seconds |
+|   Sense   | [SilkWings](#silkwings) |   ---    |    Hold     |                                                                   Creates aural and visual indicators detecting nearby enemies, growing in frequency with proximity                                                                    |                                            ---                                            |
 
 </details>
 
