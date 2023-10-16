@@ -46,11 +46,11 @@ bossbar set tlc:passive/silk_spinner/3 color white
 bossbar set tlc:passive/silk_spinner/4 color white
 bossbar set tlc:passive/silk_spinner/5 color white
 
-bossbar set tlc:passive/silk_spinner/0 players @a[predicate=tlc:tribes/silkwings, tag=eoflib.atts, scores={tlc.passives.silk_spinner=0..59}]
-bossbar set tlc:passive/silk_spinner/5 players @a[predicate=tlc:tribes/silkwings, tag=eoflib.atts, scores={tlc.passives.silk_spinner=60..139}]
-bossbar set tlc:passive/silk_spinner/5 players @a[predicate=tlc:tribes/silkwings, tag=eoflib.atts, scores={tlc.passives.silk_spinner=140..239}]
-bossbar set tlc:passive/silk_spinner/5 players @a[predicate=tlc:tribes/silkwings, tag=eoflib.atts, scores={tlc.passives.silk_spinner=240..359}]
-bossbar set tlc:passive/silk_spinner/5 players @a[predicate=tlc:tribes/silkwings, tag=eoflib.atts, scores={tlc.passives.silk_spinner=360..479}]
-bossbar set tlc:passive/silk_spinner/5 players @a[predicate=tlc:tribes/silkwings, tag=eoflib.atts, scores={tlc.passives.silk_spinner=480}]
+# bossbar set tlc:passive/silk_spinner/0 players @a[predicate=tlc:tribes/silkwings, tag=eoflib.atts, scores={tlc.passives.silk_spinner=0..59}]
+# bossbar set tlc:passive/silk_spinner/5 players @a[predicate=tlc:tribes/silkwings, tag=eoflib.atts, scores={tlc.passives.silk_spinner=60..139}]
+# bossbar set tlc:passive/silk_spinner/5 players @a[predicate=tlc:tribes/silkwings, tag=eoflib.atts, scores={tlc.passives.silk_spinner=140..239}]
+# bossbar set tlc:passive/silk_spinner/5 players @a[predicate=tlc:tribes/silkwings, tag=eoflib.atts, scores={tlc.passives.silk_spinner=240..359}]
+# bossbar set tlc:passive/silk_spinner/5 players @a[predicate=tlc:tribes/silkwings, tag=eoflib.atts, scores={tlc.passives.silk_spinner=360..479}]
+# bossbar set tlc:passive/silk_spinner/5 players @a[predicate=tlc:tribes/silkwings, tag=eoflib.atts, scores={tlc.passives.silk_spinner=480}]
 
 #endregion

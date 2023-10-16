@@ -6,7 +6,7 @@
 	# Base effects
 effect give @a[predicate=tlc:tribes/hivewings, tag=eoflib.atts] strength 1 1 true
 
-	# Check for Synchrosocial Effects
+	# Check for Synchrosocial effects
 execute as @a[predicate=tlc:tribes/hivewings] at @s store result score @s tlc.passives.synchrosocial run execute if entity @a[predicate=tlc:tribes/hivewings, distance=0.1..8]
 execute if entity @a[predicate=tlc:tribes/hivewings, predicate=tlc:passives/synchrosocial/1, tag=eoflib.atts] run function tlc:effects/hivewings/synchrosocial/1
 execute if entity @a[predicate=tlc:tribes/hivewings, predicate=tlc:passives/synchrosocial/2, tag=eoflib.atts] run function tlc:effects/hivewings/synchrosocial/2
