@@ -3,7 +3,7 @@
 # Initialise The Lost Continent.
 
 #region
-	# Test
+    # Test
 tellraw @s "Unimplemented function component."
 
 #endregion

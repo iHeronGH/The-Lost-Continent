@@ -1,16 +1,26 @@
 {
-	"parent": "eoflib:dragon",
-	"criteria": {
-		"is_pantalan": {
-			"trigger": "minecraft:tick",
-			"conditions": {
-				"player": [
-					{
-						"condition": "minecraft:reference",
-						"name": "tlc:tribes/pantalan"
-					}
-				]
-			}
-		}
-	}
+    "parent": "eoflib:dragon",
+    "criteria": {
+        "is_pantalan": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "tlc:tribes/pantalan"
+                    },
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "eoflib:settings/allow_attributes"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "tlc:effects/main"
+    }
 }
+
+
+

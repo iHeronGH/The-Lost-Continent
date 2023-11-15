@@ -1,26 +1,26 @@
 {
-	"condition": "minecraft:entity_scores",
-	"entity": "this",
-	"scores": {
-		"tlc.passives.synchrosocial": {
-			"min": {
-				"type": "minecraft:score",
-				"score": "tlc.passives.synchrosocial",
-				"target": {
-					"type": "minecraft:fixed",
-					"name": "#tlc.passives.synchrosocial.2"
-				},
-				"scale": 1
-			},
-			"max": {
-				"type": "minecraft:score",
-				"score": "tlc.passives.synchrosocial",
-				"target": {
-					"type": "minecraft:fixed",
-					"name": "#tlc.passives.synchrosocial.2"
-				},
-				"scale": 1
-			}
-		}
-	}
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+        "tlc.passives.synchrosocial": {
+            "min": {
+                "type": "minecraft:score",
+                "score": "tlc.passives.synchrosocial",
+                "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#tlc.passives.synchrosocial.2"
+                },
+                "scale": 1
+            },
+            "max": {
+                "type": "minecraft:score",
+                "score": "tlc.passives.synchrosocial",
+                "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#tlc.passives.synchrosocial.2"
+                },
+                "scale": 1
+            }
+        }
+    }
 }

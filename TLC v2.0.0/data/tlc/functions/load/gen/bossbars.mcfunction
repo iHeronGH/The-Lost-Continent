@@ -3,8 +3,8 @@
 # Generates essential bossbars for The Lost Continent.
 
 #region
-	# Generate bossbars
-		## Silk Spinner
+    # Generate bossbars
+        ## Silk Spinner
 #define bossbar tlc:passive/silk_spinner/0 Bossbar for Silk Spinner passive, 0/5 charges
 bossbar add tlc:passive/silk_spinner/0 [{"text": "Silk Spinner: 0/5"}]
 
@@ -23,8 +23,8 @@ bossbar add tlc:passive/silk_spinner/4 [{"text": "Silk Spinner: 4/5"}]
 #define bossbar tlc:passive/silk_spinner/5 Bossbar for Silk Spinner passive, 5/5 charges
 bossbar add tlc:passive/silk_spinner/5 [{"text": "Silk Spinner: 5/5"}]
 
-	# Modify bossbars
-		## Silk Spinner
+    # Modify bossbars
+        ## Silk Spinner
 bossbar set tlc:passive/silk_spinner/0 value 0
 bossbar set tlc:passive/silk_spinner/1 value 1
 bossbar set tlc:passive/silk_spinner/2 value 2

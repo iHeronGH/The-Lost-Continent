@@ -3,14 +3,14 @@
 # Generates The Lost Continent teams.
 
 #region
-	# Create tribe teams
-team add Hivewing
-team add Leafwing
-team add Silkwing
+    # Create tribe teams
+team add HiveWing
+team add LeafWing
+team add SilkWing
 
-	# Team modifiers
-team modify Hivewing color gold
-team modify Leafwing color dark_green
-team modify Silkwing color light_purple
+    # Team modifiers
+team modify HiveWing color gold
+team modify LeafWing color dark_green
+team modify SilkWing color light_purple
 
 #endregion

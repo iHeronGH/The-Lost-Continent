@@ -3,7 +3,7 @@
 # Delete bossbars from The Lost Continent.
 
 #region
-	# Remove bossbars
+    # Remove bossbars
 bossbar remove tlc:passive/silk_spinner/0
 bossbar remove tlc:passive/silk_spinner/1
 bossbar remove tlc:passive/silk_spinner/2

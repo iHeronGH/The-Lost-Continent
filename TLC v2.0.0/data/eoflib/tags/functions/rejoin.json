@@ -1,7 +1,7 @@
 {
-	"replace": false,
-	"values": [
-		"tlc:effects/main",
-		"tlc:effects/leafwings/photosynthesis/1/cooldown"
-	]
+    "replace": false,
+    "values": [
+        "tlc:effects/main",
+        "tlc:effects/leafwings/photosynthesis/1/cooldown"
+    ]
 }

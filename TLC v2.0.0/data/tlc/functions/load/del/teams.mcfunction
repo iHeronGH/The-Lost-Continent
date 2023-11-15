@@ -3,9 +3,9 @@
 # Deletes The Lost Continent teams.
 
 #region
-	# Remove teams
-team remove Hivewing
-team remove Leafwing
-team remove Silkwing
+    # Remove teams
+team remove HiveWing
+team remove LeafWing
+team remove SilkWing
 
 #endregion

@@ -1,16 +1,16 @@
 #> tlc:effects/leafwings/base
 #
-# Grants base Leafwing effects.
+# Grants base LeafWing effects.
 
 #region
-	# Base effects
-effect give @a[predicate=tlc:tribes/leafwings, tag=eoflib.atts] strength 1 0 true
-effect give @a[predicate=tlc:tribes/leafwings, tag=eoflib.atts] speed 1 0 true
+    # Innate effects
+effect give @a[tag=eoflib.atts, predicate=tlc:tribes/leafwings] strength 1 0 true
+effect give @a[tag=eoflib.atts, predicate=tlc:tribes/leafwings] speed 1 0 true
 
-	# Check for Photosynthesis effects
-execute if entity @a[predicate=tlc:tribes/leafwings, predicate=tlc:passives/photosynthesis/1, tag=eoflib.atts] run function tlc:effects/leafwings/photosynthesis/init
+    # Check for Photosynthesis effects
+execute if entity @a[tag=eoflib.atts, predicate=tlc:tribes/leafwings, predicate=tlc:passives/photosynthesis/1] run function tlc:effects/leafwings/photosynthesis/init
 
-	# Loop if there are any LeafWings
-execute if entity @a[predicate=tlc:tribes/leafwings, tag=eoflib.atts] run schedule function tlc:effects/leafwings/base 1t replace
+    # Loop if there are any LeafWings
+# execute if entity @a[tag=eoflib.atts, predicate=tlc:tribes/leafwings] run schedule function tlc:effects/leafwings/base 1t replace
 
 #endregion

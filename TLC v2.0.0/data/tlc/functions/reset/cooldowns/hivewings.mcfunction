@@ -3,7 +3,7 @@
 # Reset all HiveWing cooldowns.
 
 #region
-	# Reset HiveWing cooldowns
+    # Reset HiveWing cooldowns
 scoreboard players set @s tlc.passives.synchrosocial 0
 # say HiveWing cooldowns reset.
 
