@@ -1,11 +1,11 @@
 #region
     # Reset Player Items
-clear @a #eoflib:items{eoflib: {}}
+clear @a #eoflib:items{eof_data: {}}
 
     # Remove Base Datapack
 function eoflib:load/del/forceloads
 function eoflib:load/del/scoreboards
-function eoflib:load/del/storage
+function eoflib:load/del/storages
 function tlc:load/del/teams
 
     # Announce Removal

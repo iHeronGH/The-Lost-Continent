@@ -1,6 +1,10 @@
 {
     "pack": {
         "pack_format": 15,
+        "supported_formats": [
+            15,
+            18
+        ],
         "description": [
             {
                 "text": "Version: ",
@@ -12,7 +16,7 @@
             },
             "\n\n",
             {
-                "text": "A DLC datapack for Elytras of Fire!\n\nThis add-on implements the three\nPantalan tribes, along with nine new\nabilities and three new passives!"
+                "text": "The official Lost Continent datapack!\n\nThis datapack implements the three\nPantalan tribes, along with nine new\nabilities and three new passives!"
             }
         ]
     }

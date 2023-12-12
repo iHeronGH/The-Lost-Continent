@@ -1,4 +1,4 @@
-#> tlc:load/del/storage
+#> tlc:load/del/storages
 #
 # Remove abstract storage containers.
 
