@@ -4,7 +4,7 @@
 
 #region
     # Reset HiveWing cooldowns
-scoreboard players set @s tlc.passives.synchrosocial 0
+scoreboard players set @a[predicate=!tlc:tribes/hivewings] tlc.passives.synchrosocial 0
 # say HiveWing cooldowns reset.
 
 #endregion

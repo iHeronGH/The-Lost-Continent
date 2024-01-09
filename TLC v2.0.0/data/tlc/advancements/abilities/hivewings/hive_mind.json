@@ -1,0 +1,20 @@
+{
+    "parent": "eoflib:ability_used",
+    "criteria": {
+        "hive_mind_activated": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "tlc:tribes/hivewings"
+                    }
+                ],
+                "recipe": "eoflib:secondary"
+            }
+        }
+    },
+    "rewards": {
+        "function": "tlc:abilities/activate/hivewings/hive_mind"
+    }
+}

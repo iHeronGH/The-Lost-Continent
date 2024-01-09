@@ -1,0 +1,24 @@
+{
+    "parent": "eoflib:ability_used",
+    "criteria": {
+        "acid_spray_activated": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "tlc:tribes/hivewings"
+                    },
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "eoflib:movement/sneak"
+                    }
+                ],
+                "recipe": "eoflib:primary"
+            }
+        }
+    },
+    "rewards": {
+        "function": "tlc:abilities/activate/hivewings/acid_spray"
+    }
+}

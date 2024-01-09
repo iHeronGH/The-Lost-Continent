@@ -17,6 +17,7 @@
         }
     },
     "rewards": {
-        "function": "tlc:effects/main"
+        "function": "tlc:passives/main"
     }
 }
+

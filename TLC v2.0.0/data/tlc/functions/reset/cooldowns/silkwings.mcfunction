@@ -4,8 +4,12 @@
 
 #region
     # Reset SilkWing cooldowns
-scoreboard players set @s tlc.passives.silk_spinner 0
-bossbar set tlc:passive/silk_spinner/0 players @a[tag=eoflib.atts, predicate=tlc:tribes/silkwings, scores={tlc.passives.silk_spinner=0..59}]
-# say SilkWing cooldowns reset.
+scoreboard players set @a[predicate=!tlc:tribes/silkwings] tlc.passives.silk_spinner 0
+bossbar set tlc:passives/silk_spinner/0 players @a[tag=eoflib.atts, predicate=tlc:tribes/silkwings, predicate=tlc:passives/silk_spinner/0]
+bossbar set tlc:passives/silk_spinner/1 players @a[tag=eoflib.atts, predicate=tlc:tribes/silkwings, predicate=tlc:passives/silk_spinner/1]
+bossbar set tlc:passives/silk_spinner/2 players @a[tag=eoflib.atts, predicate=tlc:tribes/silkwings, predicate=tlc:passives/silk_spinner/2]
+bossbar set tlc:passives/silk_spinner/3 players @a[tag=eoflib.atts, predicate=tlc:tribes/silkwings, predicate=tlc:passives/silk_spinner/3]
+bossbar set tlc:passives/silk_spinner/4 players @a[tag=eoflib.atts, predicate=tlc:tribes/silkwings, predicate=tlc:passives/silk_spinner/4]
+bossbar set tlc:passives/silk_spinner/5 players @a[tag=eoflib.atts, predicate=tlc:tribes/silkwings, predicate=tlc:passives/silk_spinner/5]
 
 #endregion

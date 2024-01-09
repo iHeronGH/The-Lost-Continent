@@ -1,0 +1,31 @@
+{
+    "parent": "eoflib:ability_used",
+    "criteria": {
+        "silk_shot_activated": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "tlc:tribes/silkwings"
+                    },
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "eoflib:movement/sneak"
+                    },
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:reference",
+                            "name": "tlc:passives/silk_spinner/0"
+                        }
+                    }
+                ],
+                "recipe": "eoflib:primary"
+            }
+        }
+    },
+    "rewards": {
+        "function": "tlc:abilities/activate/silkwings/silk_shot"
+    }
+}

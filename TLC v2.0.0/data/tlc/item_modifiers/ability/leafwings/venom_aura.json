@@ -7,13 +7,13 @@
         },
         "ops": [
             {
-                "source": "tlc[].Abilities[].LeafWings[].tertiary[].mc_data",
+                "source": "tlc.Abilities[].LeafWings[].tertiary[].mc_data",
                 "target": "{}",
                 "op": "merge"
             },
             {
-                "source": "tlc[].Abilities[].LeafWings[].tertiary[].eof_data",
-                "target": "{}.eof_data",
+                "source": "tlc.Abilities[].LeafWings[].tertiary[].eof_data",
+                "target": "eof_data",
                 "op": "replace"
             }
         ]

@@ -1,0 +1,20 @@
+{
+    "parent": "eoflib:ability_used",
+    "criteria": {
+        "sting_strike_used": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "tlc:tribes/hivewings"
+                    }
+                ],
+                "recipe": "eoflib:tertiary"
+            }
+        }
+    },
+    "rewards": {
+        "function": "tlc:abilities/activate/hivewings/sting_strike/used"
+    }
+}

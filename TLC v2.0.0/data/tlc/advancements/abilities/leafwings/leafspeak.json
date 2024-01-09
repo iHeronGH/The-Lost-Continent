@@ -1,0 +1,20 @@
+{
+    "parent": "eoflib:ability_used",
+    "criteria": {
+        "leafspeak_activated": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "tlc:tribes/leafwings"
+                    }
+                ],
+                "recipe": "eoflib:secondary"
+            }
+        }
+    },
+    "rewards": {
+        "function": "tlc:abilities/activate/leafwings/leafspeak"
+    }
+}

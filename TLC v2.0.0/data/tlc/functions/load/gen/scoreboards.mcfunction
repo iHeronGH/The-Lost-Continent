@@ -4,30 +4,15 @@
 
 #region
     # Scoreboards
-        ## Passive Objectives
-#define objective tlc.passives.synchrosocial Stores Synchrosocial scores.
-scoreboard objectives add tlc.passives.synchrosocial dummy
+        ## Passive objectives
+function tlc:load/gen/scoreboards/passive_objectives
 
-#define objective tlc.passives.photosynthesis Stores Photosynthesis scores.
-scoreboard objectives add tlc.passives.photosynthesis dummy
-
-#define objective tlc.passives.silk_spinner Stores Silk Spinner scores.
-scoreboard objectives add tlc.passives.silk_spinner dummy
-
-    # Variables
-        ## Global Variables
+    # Scoreholders
+        ## Global variables
 #define score_holder #eoflib.dlc.tlc The load status of this datapack.
-execute unless score #eoflib.dlc.tlc eoflib.dlcs = #eoflib.dlc.tlc eoflib.dlcs run scoreboard players set #eoflib.dlc.tlc eoflib.dlcs 1
+scoreboard players set #eoflib.dlc.tlc eoflib.dlcs 1
 
-        ## Passive Vars
-            ### Synchrosocial
-#define score_holder #tlc.passives.synchrosocial.1 Sets the minimum player threshold for Synchrosocial 1.
-execute unless score #tlc.passives.synchrosocial.1 tlc.passives.synchrosocial = #tlc.passives.synchrosocial.1 tlc.passives.synchrosocial run scoreboard players set #tlc.passives.synchrosocial.1 tlc.passives.synchrosocial 2
-
-#define score_holder #tlc.passives.synchrosocial.2 Sets the minimum player threshold for Synchrosocial 2.
-execute unless score #tlc.passives.synchrosocial.2 tlc.passives.synchrosocial = #tlc.passives.synchrosocial.2 tlc.passives.synchrosocial run scoreboard players set #tlc.passives.synchrosocial.2 tlc.passives.synchrosocial 3
-
-#define score_holder #tlc.passives.synchrosocial.3 Sets the minimum player threshold for Synchrosocial 3.
-execute unless score #tlc.passives.synchrosocial.3 tlc.passives.synchrosocial = #tlc.passives.synchrosocial.3 tlc.passives.synchrosocial run scoreboard players set #tlc.passives.synchrosocial.3 tlc.passives.synchrosocial 4
+        ## Passive variables
+function tlc:load/gen/scoreboards/passive_variables
 
 #endregion

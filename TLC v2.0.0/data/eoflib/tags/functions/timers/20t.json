@@ -1,3 +1,5 @@
 {
-    "values": ["tlc:loop/time/20t/tag_tribes"]
+    "values": [
+        "tlc:loop/time/20t/tag_tribes"
+    ]
 }

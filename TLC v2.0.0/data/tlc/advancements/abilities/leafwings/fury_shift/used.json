@@ -1,0 +1,27 @@
+{
+    "parent": "eoflib:ability_used",
+    "criteria": {
+        "fury_shift_used": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "tlc:tribes/leafwings"
+                    },
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:reference",
+                            "name": "eoflib:movement/sneak"
+                        }
+                    }
+                ],
+                "recipe": "eoflib:primary"
+            }
+        }
+    },
+    "rewards": {
+        "function": "tlc:abilities/activate/leafwings/fury_shift/used"
+    }
+}

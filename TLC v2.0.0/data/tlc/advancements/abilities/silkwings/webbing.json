@@ -1,0 +1,28 @@
+{
+    "parent": "eoflib:ability_used",
+    "criteria": {
+        "webbing_activated": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "tlc:tribes/silkwings"
+                    },
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "eoflib:mainhand/ability/tertiary"
+                    }
+                ],
+                "damage": {
+                    "dealt": {
+                        "min": 0
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "tlc:abilities/activate/silkwings/webbing"
+    }
+}
