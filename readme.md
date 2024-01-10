@@ -144,15 +144,15 @@ Photosynthesis is a [LeafWing](#leafwings) passive ability. It gives variable le
 
 #### Silk Spinner
 
-Silk Spinner is a [SilkWing](#silkwings) passive ability. It has special interactions with certain abilities and can have its charge rate increased by different means.
+Silk Spinner is a [SilkWing](#silkwings) passive ability. It has special interactions with certain abilities and has a charge rate of 300 charges per second, which can be increased by different means.
 
-| Level |      Activation       |                              Effect                               | Charge Duration | Cooldown |
-| :---: | :-------------------: | :---------------------------------------------------------------: | :-------------: | :------: |
-|   1   | Charges automatically |  Silk Shot becomes Silk Snipe, shooting a straight line of silk   |       3s        |   ---    |
-|   2   | Charges automatically |  Silk Shot becomes Silk Snipe, shooting a straight line of silk   |       4s        |   ---    |
-|   3   | Charges automatically |  Silk Shot becomes Silk Snipe, shooting a straight line of silk   |       5s        |   ---    |
-|   4   | Charges automatically | Silk Shot becomes Silk Burst, blasting three arcing lines of silk |       6s        |   ---    |
-|   5   | Charges automatically | Silk Shot becomes Silk Burst, blasting three arcing lines of silk |       6s        |   ---    |
+| Level | Activation |                              Effect                               | Charge Duration | Cooldown |
+| :---: | :--------: | :---------------------------------------------------------------: | :-------------: | :------: |
+|   1   | Automatic  |  Silk Shot becomes Silk Snipe, shooting a straight line of silk   |       3s        |   ---    |
+|   2   | Automatic  |  Silk Shot becomes Silk Snipe, shooting a straight line of silk   |       4s        |   ---    |
+|   3   | Automatic  |  Silk Shot becomes Silk Snipe, shooting a straight line of silk   |       5s        |   ---    |
+|   4   | Automatic  | Silk Shot becomes Silk Burst, blasting three arcing lines of silk |       6s        |   ---    |
+|   5   | Automatic  | Silk Shot becomes Silk Burst, blasting three arcing lines of silk |       6s        |   ---    |
 
 </details>
 
@@ -174,12 +174,12 @@ There are currently 9 unique abilities planned to be in The Lost Continent:
 
 [Back to top](#)
 
-|  Ability   |         Tribes          | Cooldown |     Activation      |                    Self Effects                     |                                                         Enemy Effects                                                          |
-| :--------: | :---------------------: | :------: | :-----------------: | :-------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------: |
-| Acid Spray | [HiveWings](#hivewings) |   10s    | Sneak + Right-click |                         ---                         |                                                 Wither 3 (2s)<br>Nausea 1 (8s)                                                 |
-| Fury Shift | [LeafWings](#leafwings) |   10s    | Sneak + Right-click |                         ---                         |            **Poison Dart Mode:**<br>Poison 2 (3s)<br><br>**Sap Sling Mode:**<br>Slowness 3 (4s)<br>Weakness 1 (4s)             |
-| Fury Shift | [LeafWings](#leafwings) |   ---    |     Right-click     | Toggles between Poison Dart mode and Sap Sling mode |                                                              ---                                                               |
-| Silk Shot  | [SilkWings](#silkwings) |   10s    | Sneak + Right-click |         Consumes 3 charges of Silk Spinner          | **Silk Snipe:**<br>Slowness 3 (4s)<br>Mining Fatigue 1 (4s)<br><br>**Silk Burst:**<br>Slowness 3 (4s)<br>Mining Fatigue 2 (4s) |
+|  Ability   |         Tribes          | Cooldown |     Activation      |                    Self Effects                     |                                                                                                                                                                                                                          Enemy Effects                                                                                                                                                                                                                           |
+| :--------: | :---------------------: | :------: | :-----------------: | :-------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| Acid Spray | [HiveWings](#hivewings) |   10s    | Sneak + Right-click |                         ---                         |                                                                                                                                                                                                                  Wither 3 (2s)<br>Nausea 1 (8s)                                                                                                                                                                                                                  |
+| Fury Shift | [LeafWings](#leafwings) |   10s    | Sneak + Right-click |                         ---                         |                                                                                                                                       **Poison Dart Mode:**<br>![Full Heart](images/full_heart.png)<br>Poison 2 (3s)<br><br>**Sap Sling Mode:**<br>Slowness 3 (4s)<br>Weakness 1 (4s)                                                                                                                                        |
+| Fury Shift | [LeafWings](#leafwings) |   ---    |     Right-click     | Toggles between Poison Dart mode and Sap Sling mode |                                                                                                                                                                                                                               ---                                                                                                                                                                                                                                |
+| Silk Shot  | [SilkWings](#silkwings) |   10s    | Sneak + Right-click |       Consumes 3,600 charges of Silk Spinner        | **Silk Snipe:**<br>![Three-Quarters Heart](images/three_quarters_heart.png)<br>Mining Fatigue 1 (4s)<br><br>*Silk Spinner 1:*<br>Slowness 1 (4s)<br>*Silk Spinner 2:*<br>Slowness 1 (5s)<br>*Silk Spinner 3:*<br>Slowness 2 (5s)<br><br>**Silk Burst:**<br>![Full Heart](images/full_heart.png)<br>Mining Fatigue 2 (4s)<br><br>*Silk Spinner 1:*<br>Slowness 3 (4s)<br>*Silk Spinner 2:*<br>Slowness 3 (5s) |
 
 </details>
 
@@ -189,11 +189,11 @@ There are currently 9 unique abilities planned to be in The Lost Continent:
 
 [Back to top](#)
 
-|  Ability  |         Tribes          | Cooldown | Activation  |                                                                                                              Self Effects                                                                                                              |                                       Enemy Effects                                       |
-| :-------: | :---------------------: | :------: | :---------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: |
-| Hive Mind | [HiveWings](#hivewings) |   24s    | Right-click | Strength 2 (6s)<br><br>**[Hive Mind](#synchrosocial) 1:**<br>Speed 2 (6s)<br><br>**[Hive Mind](#synchrosocial) 2:**<br>Speed 3 (6s)<br><br>**[Hive Mind](#synchrosocial) 3:**<br>Speed 3 (6s)<br>Nearby HiveWings gain Strength 2 (6s) |                                            ---                                            |
-| Leafspeak | [LeafWings](#leafwings) |   24s    | Right-click |                                                                                                           Resistance 1 (6s)                                                                                                            | Summons 3 Poison Points randomly placed within a short radius, each lasting for 8 seconds |
-|   Sense   | [SilkWings](#silkwings) |   ---    |    Hold     |                                                                   Creates aural and visual indicators detecting nearby enemies, growing in frequency with proximity                                                                    |                                            ---                                            |
+|  Ability  |         Tribes          | Cooldown | Activation  |                                                                                                                    Self Effects                                                                                                                    |                                       Enemy Effects                                       |
+| :-------: | :---------------------: | :------: | :---------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: |
+| Hive Mind | [HiveWings](#hivewings) |   24s    | Right-click | Strength 2 (6s)<br><br>**[Synchrosocial](#synchrosocial) 1:**<br>Speed 2 (6s)<br><br>**[Synchrosocial](#synchrosocial) 2:**<br>Speed 3 (6s)<br><br>**[Synchrosocial](#synchrosocial) 3:**<br>Speed 3 (6s)<br>Nearby HiveWings gain Strength 2 (6s) |                                            ---                                            |
+| Leafspeak | [LeafWings](#leafwings) |   24s    | Right-click |                                                                                                                 Resistance 1 (6s)                                                                                                                  | Summons 3 Poison Points randomly placed within a short radius, each lasting for 8 seconds |
+|   Sense   | [SilkWings](#silkwings) |   ---    |    Hold     |                                                                         Creates aural and visual indicators detecting nearby enemies, growing in frequency with proximity                                                                          |                                            ---                                            |
 
 </details>
 
