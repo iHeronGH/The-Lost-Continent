@@ -3,6 +3,9 @@
 # Activate HiveWing ability Acid Spray.
 
 #region
+    # Debug
+tellraw @a[tag=eoflib.debug] [{"text": "[", "color": "gray"}, {"text": "Debug", "color": "gold"}, {"text": "] - ", "color": "gray"}, {"text": "tlc:acid_spray.mcf", "color": "gold", "hoverEvent": {"action": "show_text", "value": {"text": "data/tlc/functions/abilities/activate/hivewings/acid_spray.mcfunction", "color": "aqua"}}}]
+
     # Activate Acid Spray
         ## User Effects
 tellraw @s {"text": "tlc:abilities/activate/hivewings/acid_spray.mcf", "color": "gold"}

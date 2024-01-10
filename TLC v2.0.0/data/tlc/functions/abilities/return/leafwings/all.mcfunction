@@ -4,7 +4,7 @@
 
 #region
     # Debug
-tellraw @s "tlc:abilities/return/leafwings/all"
+tellraw @a[tag=eoflib.debug] [{"text": "[", "color": "gray"}, {"text": "Debug", "color": "gold"}, {"text": "] - ", "color": "gray"}, {"text": "tlc:all.mcf", "color": "gold", "hoverEvent": {"action": "show_text", "value": {"text": "data/tlc/functions/abilities/return/leafwings/all.mcfunction", "color": "aqua"}}}]
 
     # Grant LeafWing abilities
 execute if entity @s[predicate=eoflib:inventory/slot_6_empty] unless entity @s[tag=tlc.leafwings.sling_mode] run function tlc:abilities/return/leafwings/fury_shift/dart

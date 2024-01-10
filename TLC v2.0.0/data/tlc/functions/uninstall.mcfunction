@@ -3,6 +3,9 @@
 # Uninstall The Lost Continent.
 
 #region
+    # Debug
+tellraw @a[tag=eoflib.debug] [{"text": "[", "color": "gray"}, {"text": "Debug", "color": "gold"}, {"text": "] - ", "color": "gray"}, {"text": "tlc:uninstall.mcf", "color": "gold", "hoverEvent": {"action": "show_text", "value": {"text": "data/tlc/functions/uninstall.mcfunction", "color": "aqua"}}}]
+
     # Disable datapack
 datapack disable "file/TLC v1.0.0"
 

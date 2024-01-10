@@ -3,7 +3,10 @@
 # Activate Photosynthesis when successfully charged.
 
 #region
-    # Effect Entities
+    # Debug
+tellraw @a[tag=eoflib.debug] [{"text": "[", "color": "gray"}, {"text": "Debug", "color": "gold"}, {"text": "] - ", "color": "gray"}, {"text": "tlc:activate.mcf", "color": "gold", "hoverEvent": {"action": "show_text", "value": {"text": "data/tlc/functions/passives/leafwings/photosynthesis/1/activate.mcfunction", "color": "aqua"}}}]
+
+    # Effect entities
 effect give @s regeneration 2 1 true
 
     # Reset

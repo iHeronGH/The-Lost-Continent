@@ -4,7 +4,7 @@
 
 #region
     # Debug
-tellraw @s[tag=eoflib.debug] [{"text": "[", "color": "gray"}, {"text": "Debug", "color": "gold"}, {"text": "]", "color": "gray"}, {"text": " - ", "color": "gray"}, {"text": "tlc:abilities/effects/silk_shot/burst.mcf", "color": "gold"}]
+tellraw @a[tag=eoflib.debug] [{"text": "[", "color": "gray"}, {"text": "Debug", "color": "gold"}, {"text": "] - ", "color": "gray"}, {"text": "tlc:burst.mcf", "color": "gold", "hoverEvent": {"action": "show_text", "value": {"text": "data/tlc/functions/abilities/entity_effects/silk_shot/burst.mcfunction", "color": "aqua"}}}]
 
     # Enemy effects
 damage @s 2 generic

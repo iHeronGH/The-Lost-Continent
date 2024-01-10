@@ -3,9 +3,11 @@
 # Activate LeafWing ability Fury Shift.
 
 #region
+    # Debug
+tellraw @a[tag=eoflib.debug] [{"text": "[", "color": "gray"}, {"text": "Debug", "color": "gold"}, {"text": "] - ", "color": "gray"}, {"text": "tlc:activated.mcf", "color": "gold", "hoverEvent": {"action": "show_text", "value": {"text": "data/tlc/functions/abilities/activate/leafwings/fury_shift/activated.mcfunction", "color": "aqua"}}}]
+
     # Activate Fury Shift
         ## User effects
-tellraw @s {"text": "tlc:abilities/activate/leafwings/fury_shift.mcf", "color": "dark_green"}
 execute if entity @s[tag=tlc.leafwings.dart_mode] anchored eyes positioned ^ ^-0.2 ^ run function eoflib_raycast:raycast/start with storage eoflib:config tlc.Abilities[].LeafWings[].primary[{eof_data: {ability_data: {mode: "dart"}}}].eof_data
 execute unless entity @s[tag=tlc.leafwings.dart_mode] anchored eyes positioned ^ ^-0.4 ^ rotated ~ ~-25 run function eoflib_raycast:raycast/start with storage eoflib:config tlc.Abilities[].LeafWings[].primary[{eof_data: {ability_data: {mode: "sling"}}}].eof_data
 

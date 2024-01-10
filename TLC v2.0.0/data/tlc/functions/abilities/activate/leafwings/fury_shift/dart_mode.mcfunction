@@ -3,7 +3,7 @@
 # Switch LeafWing ability Sting Strike to Dart Mode on use.
 
 #region
-    # Debug
+    # Announce toggle
 title @s actionbar [{"text": "Switched to Fury Shift: ", "color": "dark_green"}, {"text": "Poison Dart!", "color": "green"}]
 
     # Switch to Dart Mode

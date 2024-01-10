@@ -3,9 +3,11 @@
 # Activate SilkWing ability Sense.
 
 #region
+    # Debug
+tellraw @a[tag=eoflib.debug] [{"text": "[", "color": "gray"}, {"text": "Debug", "color": "gold"}, {"text": "] - ", "color": "gray"}, {"text": "tlc:sense.mcf", "color": "gold", "hoverEvent": {"action": "show_text", "value": {"text": "data/tlc/functions/abilities/activate/silkwings/sense.mcfunction", "color": "aqua"}}}]
+
     # Activate Sense
         ## User effects
-tellraw @s {"text": "tlc:abilities/activate/silkwings/sense.mcf", "color": "white"}
 
         ## Enemy effects
 

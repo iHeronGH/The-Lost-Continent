@@ -4,7 +4,7 @@
 
 #region
     # Debug
-# tellraw @a [{"selector": "@s", "color": "gold"}, {"text": " - ", "color": "gray"}, "tlc:abilities/entity_effects/main.mcf"]
+tellraw @a[tag=eoflib.debug] [{"text": "[", "color": "gray"}, {"text": "Debug", "color": "gold"}, {"text": "] - ", "color": "gray"}, {"text": "tlc:main.mcf", "color": "gold", "hoverEvent": {"action": "show_text", "value": {"text": "data/tlc/functions/abilities/entity_effects/main.mcfunction", "color": "aqua"}}}]
 
     # Determine ability
 execute if data storage eoflib_raycast:ability {ability_data: {name: "acid_spray"}} run function tlc:abilities/entity_effects/acid_spray

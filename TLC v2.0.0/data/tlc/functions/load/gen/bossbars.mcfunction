@@ -3,6 +3,9 @@
 # Generates essential bossbars for The Lost Continent.
 
 #region
+    # Debug
+tellraw @a[tag=eoflib.debug] [{"text": "[", "color": "gray"}, {"text": "Debug", "color": "gold"}, {"text": "] - ", "color": "gray"}, {"text": "tlc:bossbars.mcf", "color": "gold", "hoverEvent": {"action": "show_text", "value": {"text": "data/tlc/functions/load/gen/bossbars.mcfunction", "color": "aqua"}}}]
+
     # Generate bossbars
         ## Silk Spinner
 #define bossbar tlc:passives/silk_spinner/0 Bossbar for Silk Spinner passive, 0/5 charges

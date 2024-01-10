@@ -3,6 +3,9 @@
 # Grants base HiveWing effects.
 
 #region
+    # Debug
+tellraw @a[tag=eoflib.debug] [{"text": "[", "color": "gray"}, {"text": "Debug", "color": "gold"}, {"text": "] - ", "color": "gray"}, {"text": "tlc:base.mcf", "color": "gold", "hoverEvent": {"action": "show_text", "value": {"text": "data/tlc/functions/passives/hivewings/base.mcfunction", "color": "aqua"}}}]
+
     # Innate effects
 effect give @a[tag=eoflib.atts, predicate=tlc:tribes/hivewings] strength 1 1 true
 

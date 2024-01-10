@@ -4,7 +4,7 @@
 
 #region
     # Debug
-# tellraw @a [{"selector": "@s", "color": "gold"}, {"text": " - ", "color": "gray"}, "tlc:abilities/effects/acid_spray.mcf"]
+tellraw @a[tag=eoflib.debug] [{"text": "[", "color": "gray"}, {"text": "Debug", "color": "gold"}, {"text": "] - ", "color": "gray"}, {"text": "tlc:acid_spray.mcf", "color": "gold", "hoverEvent": {"action": "show_text", "value": {"text": "data/tlc/functions/abilities/entity_effects/acid_spray.mcfunction", "color": "aqua"}}}]
 
     # Enemy effects
 effect give @s wither 2 2 true

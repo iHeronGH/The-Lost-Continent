@@ -4,7 +4,7 @@
 
 #region
     # Debug
-tellraw @s "tlc:abilities/return/silkwings/all"
+tellraw @a[tag=eoflib.debug] [{"text": "[", "color": "gray"}, {"text": "Debug", "color": "gold"}, {"text": "] - ", "color": "gray"}, {"text": "tlc:all.mcf", "color": "gold", "hoverEvent": {"action": "show_text", "value": {"text": "data/tlc/functions/abilities/return/silkwings/all.mcfunction", "color": "aqua"}}}]
 
     # Grant SilkWing abilities
 execute if entity @s[predicate=eoflib:inventory/slot_6_empty] if entity @s[predicate=tlc:passives/silk_spinner/silk_snipe] run function tlc:abilities/return/silkwings/silk_shot/snipe

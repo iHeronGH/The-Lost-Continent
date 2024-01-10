@@ -6,6 +6,9 @@
 #   iHeronGH: Optimisations, slight changes
 
 #region
+    # Debug
+tellraw @a[tag=eoflib.debug] [{"text": "[", "color": "gray"}, {"text": "Debug", "color": "gold"}, {"text": "] - ", "color": "gray"}, {"text": "tlc:leafspeak.mcf", "color": "gold", "hoverEvent": {"action": "show_text", "value": {"text": "data/tlc/functions/abilities/activate/leafwings/leafspeak.mcfunction", "color": "aqua"}}}]
+
     # Activate Leafspeak
         ## Announce activation
 title @s actionbar {"text": "Leafspeak activated!", "color": "green"}

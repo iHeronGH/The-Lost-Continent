@@ -3,6 +3,9 @@
 # Resolve Pantalan tribe tags for all players.
 
 #region
+    # Debug
+tellraw @a[tag=eoflib.debug] [{"text": "[", "color": "gray"}, {"text": "Debug", "color": "gold"}, {"text": "] - ", "color": "gray"}, {"text": "tlc:tag_tribes.mcf", "color": "gold", "hoverEvent": {"action": "show_text", "value": {"text": "data/tlc/functions/loop/time/20t/tag_tribes.mcfunction", "color": "aqua"}}}]
+
     # Remove tags
 execute if entity @a[predicate=!tlc:tribes/hivewings] run tag @a[predicate=!tlc:tribes/hivewings] remove HiveWing
 execute if entity @a[predicate=!tlc:tribes/leafwings] run tag @a[predicate=!tlc:tribes/leafwings] remove LeafWing

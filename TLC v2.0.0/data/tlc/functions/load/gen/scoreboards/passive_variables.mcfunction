@@ -3,6 +3,9 @@
 # Initialises passive ability variables.
 
 #region
+    # Debug
+tellraw @a[tag=eoflib.debug] [{"text": "[", "color": "gray"}, {"text": "Debug", "color": "gold"}, {"text": "] - ", "color": "gray"}, {"text": "tlc:passive_variables.mcf", "color": "gold", "hoverEvent": {"action": "show_text", "value": {"text": "data/tlc/functions/load/gen/scoreboards/passive_variables.mcfunction", "color": "aqua"}}}]
+
     # Synchrosocial
 #define score_holder #tlc.passives.synchrosocial.1 Sets the minimum player threshold for Synchrosocial 1.
 execute unless score #tlc.passives.synchrosocial.1 tlc.passives.synchrosocial = #tlc.passives.synchrosocial.1 tlc.passives.synchrosocial run scoreboard players set #tlc.passives.synchrosocial.1 tlc.passives.synchrosocial 2

@@ -4,7 +4,7 @@
 
 #region
     # Debug
-tellraw @a[tag=eoflib.debug] [{"text": "[", "color": "gray"}, {"text": "Debug", "color": "gold"}, {"text": "] - ", "color": "gray"}, {"text": "tlc:abilities/entity_effects/silk_shot/snipe.mcf", "color": "gold"}]
+tellraw @a[tag=eoflib.debug] [{"text": "[", "color": "gray"}, {"text": "Debug", "color": "gold"}, {"text": "] - ", "color": "gray"}, {"text": "tlc:snipe.mcf", "color": "gold", "hoverEvent": {"action": "show_text", "value": {"text": "data/tlc/functions/abilities/entity_effects/silk_shot/snipe.mcfunction", "color": "aqua"}}}]
 
     # Enemy effects
 damage @s 1.5 generic
