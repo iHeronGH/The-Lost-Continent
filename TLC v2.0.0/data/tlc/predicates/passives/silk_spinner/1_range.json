@@ -7,7 +7,7 @@
                 "type": "minecraft:score",
                 "target": {
                     "type": "minecraft:fixed",
-                    "name": "#tlc.passives.silk_spinner.4.min"
+                    "name": "#tlc.passives.silk_spinner.1.min"
                 },
                 "score": "tlc.passives.silk_spinner",
                 "scale": 1
@@ -16,7 +16,7 @@
                 "type": "minecraft:score",
                 "target": {
                     "type": "minecraft:fixed",
-                    "name": "#tlc.passives.silk_spinner.4.min"
+                    "name": "#tlc.passives.silk_spinner.1.max"
                 },
                 "score": "tlc.passives.silk_spinner",
                 "scale": 1

@@ -3,8 +3,15 @@
     "entity": "this",
     "scores": {
         "tlc.passives.silk_spinner": {
-            "min": 7200,
-            "max": 7200
+            "min": {
+                "type": "minecraft:score",
+                "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#tlc.passives.silk_spinner.5.min"
+                },
+                "score": "tlc.passives.silk_spinner",
+                "scale": 1
+            }
         }
     }
 }

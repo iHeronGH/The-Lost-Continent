@@ -17,7 +17,7 @@
                         "condition": "minecraft:inverted",
                         "term": {
                             "condition": "minecraft:reference",
-                            "name": "tlc:passives/silk_spinner/0"
+                            "name": "tlc:passives/silk_spinner/0_range"
                         }
                     }
                 ],

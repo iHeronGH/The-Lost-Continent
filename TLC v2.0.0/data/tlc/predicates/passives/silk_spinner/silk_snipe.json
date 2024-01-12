@@ -3,19 +3,19 @@
     "terms": [
         {
             "condition": "minecraft:reference",
-            "name": "tlc:passives/silk_spinner/0"
+            "name": "tlc:passives/silk_spinner/0_range"
         },
         {
             "condition": "minecraft:reference",
-            "name": "tlc:passives/silk_spinner/1"
+            "name": "tlc:passives/silk_spinner/1_range"
         },
         {
             "condition": "minecraft:reference",
-            "name": "tlc:passives/silk_spinner/2"
+            "name": "tlc:passives/silk_spinner/2_range"
         },
         {
             "condition": "minecraft:reference",
-            "name": "tlc:passives/silk_spinner/3"
+            "name": "tlc:passives/silk_spinner/3_range"
         }
     ]
 }
