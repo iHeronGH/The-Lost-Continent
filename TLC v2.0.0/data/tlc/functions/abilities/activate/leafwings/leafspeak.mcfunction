@@ -7,15 +7,15 @@
 
 #region
     # Debug
-execute if entity @s run tellraw @s[tag=eoflib.debug] [{"text": "[", "color": "dark_gray"}, {"text": "Debug", "color": "gold"}, {"text": "] - ", "color": "dark_gray"}, {"text": "tlc:leafwings/leafspeak.mcf", "color": "gold", "hoverEvent": {"action": "show_text", "value": {"text": "data/tlc/functions/abilities/activate/leafwings/leafspeak.mcfunction", "color": "aqua"}}}]
-execute unless entity @s run tellraw @a[tag=eoflib.debug] [{"text": "[", "color": "dark_gray"}, {"text": "Debug", "color": "gold"}, {"text": "] - ", "color": "dark_gray"}, {"text": "tlc:leafwings/leafspeak.mcf", "color": "gray", "hoverEvent": {"action": "show_text", "value": {"text": "data/tlc/functions/abilities/activate/leafwings/leafspeak.mcfunction", "color": "aqua"}}}]
+execute if entity @s run tellraw @s[tag=eoflib.debug] [{"text": "[", "color": "dark_gray"}, {"text": "Debug", "color": "gold"}, {"text": "] - ", "color": "dark_gray"}, {"text": "tlc:leafwings/leafspeak.mcf", "color": "gold", "hoverEvent": {"action": "show_text", "value": {"text": "You executed the following function:\n\ndata/tlc/functions/abilities/activate/leafwings/leafspeak.mcfunction", "color": "aqua"}}}]
+execute unless entity @s run tellraw @a[tag=eoflib.debug] [{"text": "[", "color": "dark_gray"}, {"text": "Debug", "color": "gold"}, {"text": "] - ", "color": "dark_gray"}, {"text": "tlc:leafwings/leafspeak.mcf", "color": "gray", "hoverEvent": {"action": "show_text", "value": {"text": "Server executed the following function:\n\ndata/tlc/functions/abilities/activate/leafwings/leafspeak.mcfunction", "color": "aqua"}}}]
 
     # Activate Leafspeak
         ## Announce activation
 title @s actionbar {"text": "Leafspeak activated!", "color": "green"}
 
         ## User effects
-effect give @s resistance 6 1 true
+effect give @s resistance 8 0 true
 
             ### Randomise Poison Point spawns
 summon marker ~ ~ ~ {Tags:["tlc.leafspeak.poison_point"]}
@@ -24,14 +24,18 @@ summon marker ~ ~ ~ {Tags:["tlc.leafspeak.poison_point"]}
 spreadplayers ~ ~ 12 7 false @e[sort=nearest, limit=3, type=marker, tag=tlc.leafspeak.poison_point]
 
             ### Summon Poison Points
-execute at @e[sort=nearest, limit=3, type=marker, tag=tlc.leafspeak.poison_point] run summon area_effect_cloud ~ ~ ~ {Particle: "dust 0.37 0.49 0.09 1", Radius: 2.5f, RadiusPerTick: 0, Duration: 16, effects: [{id: "poison", duration: 40, amplifier: 3, show_particles: 0b}, {id: "slowness", duration: 40, amplifier: 1, show_particles: 0b}]}
+execute at @e[sort=nearest, limit=3, type=marker, tag=tlc.leafspeak.poison_point] run summon area_effect_cloud ~ ~ ~ {Particle: "dust 0.37 0.49 0.09 1", Radius: 3f, RadiusPerTick: 0, Duration: 160, effects: [{id: "minecraft:poison", duration: 40, amplifier: 3, show_particles: 0b}, {id: "minecraft:slowness", duration: 40, amplifier: 1, show_particles: 0b}]}
 
             ### Kill spawnpoints
-tp @e[sort=nearest, limit=3, type=marker, tag=tlc.leafspeak.poison_point] ~ ~-1000 ~
 kill @e[sort=nearest, limit=3, type=marker, tag=tlc.leafspeak.poison_point]
 
         ## Enemy effects
-effect give @e[type=!#eoflib:unaffected, predicate=!tlc:tribes/leafwings, distance=..8] slowness 8 1 true
+effect give @e[predicate=eoflib:entities/affected, predicate=!tlc:tribes/leafwings, distance=..8] slowness 8 1 true
+
+    # Begin cooldown
+tag @s[tag=!eoflib.cooldown.bypass] add tlc.cooldown.active
+scoreboard players operation @s[tag=!eoflib.cooldown.bypass] tlc.abilities.leafspeak = #tlc.abilities.leafspeak.cooldown tlc.abilities.leafspeak
+function #eoflib:abilities/cooldowns/main
 
     # Revoke advancement
 advancement revoke @s only tlc:abilities/leafwings/leafspeak

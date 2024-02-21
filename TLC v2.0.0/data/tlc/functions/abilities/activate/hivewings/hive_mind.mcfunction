@@ -15,9 +15,14 @@ title @s actionbar {"text": "Hive Mind activated!", "color": "yellow"}
 effect give @s strength 6 1 true
 execute if entity @s[predicate=tlc:passives/synchrosocial/1] run effect give @s speed 6 1 true
 execute unless entity @s[predicate=!tlc:passives/synchrosocial/2] unless entity @s[predicate=!tlc:passives/synchrosocial/2] run effect give @s speed 6 2 true
-execute if entity @s[predicate=tlc:passives/synchrosocial/3] run effect give @a[predicate=tlc:tribes/hivewings, distance=..8] strength 6 1 true
+execute if entity @s[predicate=tlc:passives/synchrosocial/3] run effect give @a[predicate=tlc:tribes/hivewings, distance=..8] strength 6 2 true
 
         ## Enemy effects
+
+    # Begin cooldown
+tag @s[tag=!eoflib.cooldown.bypass] add tlc.cooldown.active
+scoreboard players operation @s[tag=!eoflib.cooldown.bypass] tlc.abilities.hive_mind = #tlc.abilities.hive_mind.cooldown tlc.abilities.hive_mind
+function #eoflib:abilities/cooldowns/main
 
     # Revoke advancement
 advancement revoke @s only tlc:abilities/hivewings/hive_mind

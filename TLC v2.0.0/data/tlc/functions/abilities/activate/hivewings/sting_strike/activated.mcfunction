@@ -9,8 +9,16 @@ execute unless entity @s run tellraw @a[tag=eoflib.debug] [{"text": "[", "color"
 
     # Activate Sting Strike
         ## User effects
-        
+
         ## Enemy effects
+execute if entity @s[tag=tlc.hivewings.paralysis_mode, predicate=tlc:tribes/hivewings] run effect give @e[predicate=eoflib:damage/recent] slowness 8 4 true
+execute if entity @s[tag=tlc.hivewings.poison_mode, predicate=tlc:tribes/hivewings] run effect give @e[predicate=eoflib:damage/recent] poison 8 3 true
+execute if entity @s[predicate=tlc:tribes/hivewings] run effect give @e[predicate=eoflib:damage/recent] weakness 8 1 true
+
+    # Begin cooldown
+tag @s[tag=!eoflib.cooldown.bypass] add tlc.cooldown.active
+scoreboard players operation @s tlc.abilities.sting_strike = #tlc.abilities.sting_strike.cooldown tlc.abilities.sting_strike
+function #eoflib:abilities/cooldowns/main
 
     # Revoke advancement
 advancement revoke @s only tlc:abilities/hivewings/sting_strike/activated

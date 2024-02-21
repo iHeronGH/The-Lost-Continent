@@ -6,6 +6,13 @@
             "conditions": {
                 "player": [
                     {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:reference",
+                            "name": "tlc:abilities/cooldowns/hivewings/acid_spray"
+                        }
+                    },
+                    {
                         "condition": "minecraft:reference",
                         "name": "tlc:tribes/hivewings"
                     },

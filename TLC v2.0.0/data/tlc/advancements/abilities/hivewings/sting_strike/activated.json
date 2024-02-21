@@ -6,6 +6,13 @@
             "conditions": {
                 "player": [
                     {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:reference",
+                            "name": "tlc:abilities/cooldowns/hivewings/sting_strike"
+                        }
+                    },
+                    {
                         "condition": "minecraft:reference",
                         "name": "tlc:tribes/hivewings"
                     },
@@ -16,7 +23,7 @@
                 ],
                 "damage": {
                     "dealt": {
-                        "min": 0
+                        "min": 1
                     }
                 }
             }

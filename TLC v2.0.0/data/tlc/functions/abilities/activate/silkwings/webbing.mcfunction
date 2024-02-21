@@ -12,6 +12,11 @@ execute unless entity @s run tellraw @a[tag=eoflib.debug] [{"text": "[", "color"
 
         ## Enemy effects
 
+    # Begin cooldown
+tag @s[tag=!eoflib.cooldown.bypass] add tlc.cooldown.active
+scoreboard players operation @s[tag=!eoflib.cooldown.bypass] tlc.abilities.webbing = #tlc.abilities.webbing.cooldown tlc.abilities.webbing
+function #eoflib:abilities/cooldowns/main
+
     # Revoke advancement
 advancement revoke @s only tlc:abilities/silkwings/webbing
 

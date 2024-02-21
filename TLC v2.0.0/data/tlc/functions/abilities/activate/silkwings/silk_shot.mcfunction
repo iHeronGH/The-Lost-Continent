@@ -20,6 +20,11 @@ execute if score @s tlc.passives.silk_spinner >= #tlc.passives.silk_spinner.silk
 
         ## Enemy effects
 
+    # Begin cooldown
+tag @s[tag=!eoflib.cooldown.bypass] add tlc.cooldown.active
+scoreboard players operation @s[tag=!eoflib.cooldown.bypass] tlc.abilities.silk_shot = #tlc.abilities.silk_shot.cooldown tlc.abilities.silk_shot
+function #eoflib:abilities/cooldowns/main
+
     # Revoke advancement
 advancement revoke @s only tlc:abilities/silkwings/silk_shot
 

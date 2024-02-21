@@ -12,6 +12,11 @@ execute unless entity @s run tellraw @a[tag=eoflib.debug] [{"text": "[", "color"
 
         ## Enemy effects
 
+    # Begin cooldown
+tag @s[tag=!eoflib.cooldown.bypass] add tlc.cooldown.active
+scoreboard players operation @s[tag=!eoflib.cooldown.bypass] tlc.abilities.venom_aura = #tlc.abilities.venom_aura.cooldown tlc.abilities.venom_aura
+function #eoflib:abilities/cooldowns/main
+
     # Revoke advancement
 advancement revoke @s only tlc:abilities/leafwings/venom_aura
 

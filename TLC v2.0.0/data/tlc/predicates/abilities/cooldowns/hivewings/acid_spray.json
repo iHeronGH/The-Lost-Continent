@@ -1,0 +1,26 @@
+{
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+        "tlc.abilities.acid_spray": {
+            "min": {
+                "type": "minecraft:score",
+                "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#eoflib.1"
+                },
+                "score": "eoflib.numbers",
+                "scale": 1
+            },
+            "max": {
+                "type": "minecraft:score",
+                "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#tlc.abilities.acid_spray.cooldown"
+                },
+                "score": "tlc.abilities.acid_spray",
+                "scale": 1
+            }
+        }
+    }
+}

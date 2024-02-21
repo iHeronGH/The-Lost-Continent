@@ -1,0 +1,26 @@
+{
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+        "tlc.abilities.webbing": {
+            "min": {
+                "type": "minecraft:score",
+                "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#eoflib.1"
+                },
+                "score": "eoflib.numbers",
+                "scale": 1
+            },
+            "max": {
+                "type": "minecraft:score",
+                "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#tlc.abilities.webbing.cooldown"
+                },
+                "score": "tlc.abilities.webbing",
+                "scale": 1
+            }
+        }
+    }
+}
