@@ -30,6 +30,6 @@
         }
     },
     "rewards": {
-        "function": "tlc:abilities/activate/leafwings/venom_aura"
+        "function": "tlc:abilities/activate/leafwings/venom_aura/activate"
     }
 }

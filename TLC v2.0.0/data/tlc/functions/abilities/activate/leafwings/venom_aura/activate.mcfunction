@@ -1,6 +1,6 @@
-#> tlc:abilities/activate/leafwings/venom_aura
+#> tlc:abilities/activate/leafwings/venom_aura/activate
 #
-# Activate RainWing ability Venom Aura.
+# Activate LeafWing ability Venom Aura.
 
 #region
     # Debug
@@ -9,6 +9,8 @@ execute unless entity @s run tellraw @a[tag=eoflib.debug] [{"text": "[", "color"
 
     # Activate Venom Aura
         ## User effects
+tag @s add tlc.abilities.venom_aura
+function tlc:abilities/activate/leafwings/venom_aura/loop
 
         ## Enemy effects
 
