@@ -26,6 +26,6 @@
         }
     },
     "rewards": {
-        "function": "tlc:abilities/activate/leafwings/fury_shift/activated"
+        "function": "tlc:abilities/activate/leafwings/fury_shift/activate"
     }
 }

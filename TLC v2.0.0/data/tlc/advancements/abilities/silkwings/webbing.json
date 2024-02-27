@@ -25,11 +25,17 @@
                     "dealt": {
                         "min": 1
                     }
-                }
+                },
+                "entity": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "eoflib:entities/affected"
+                    }
+                ]
             }
         }
     },
     "rewards": {
-        "function": "tlc:abilities/activate/silkwings/webbing"
+        "function": "tlc:abilities/activate/silkwings/webbing/activate"
     }
 }

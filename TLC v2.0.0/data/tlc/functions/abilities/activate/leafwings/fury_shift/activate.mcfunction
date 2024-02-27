@@ -1,4 +1,4 @@
-#> tlc:abilities/activate/leafwings/fury_shift/activated
+#> tlc:abilities/activate/leafwings/fury_shift/activate
 #
 # Activate LeafWing ability Fury Shift.
 
@@ -20,9 +20,9 @@ execute unless entity @s[tag=tlc.leafwings.dart_mode] anchored eyes positioned ^
     # Begin cooldown
 tag @s[tag=!eoflib.cooldown.bypass] add tlc.cooldown.active
 scoreboard players operation @s[tag=!eoflib.cooldown.bypass] tlc.abilities.fury_shift = #tlc.abilities.fury_shift.cooldown tlc.abilities.fury_shift
-function #eoflib:abilities/cooldowns/main
+execute if entity @s[tag=!eoflib.cooldown.bypass] run function #eoflib:abilities/cooldowns/main
 
     # Revoke advancement
-advancement revoke @s only tlc:abilities/leafwings/fury_shift/activated
+advancement revoke @s only tlc:abilities/leafwings/fury_shift/activate
 
 #endregion

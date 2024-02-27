@@ -9,6 +9,12 @@ execute unless entity @s run tellraw @a[tag=eoflib.debug] [{"text": "[", "color"
 
     # Decrement cooldown
 scoreboard players operation @a[tag=tlc.cooldown.active, predicate=tlc:tribes/leafwings, predicate=tlc:abilities/cooldowns/leafwings/venom_aura] tlc.abilities.venom_aura -= #eoflib.1 eoflib.numbers
-title @a[tag=tlc.cooldown.active, predicate=tlc:tribes/leafwings, predicate=!tlc:abilities/cooldowns/leafwings/venom_aura] actionbar {"text": "Venom Aura off cooldown!", "color": "dark_green"}
+
+    # Announce deactive
+title @a[tag=tlc.cooldown.active, tag=tlc.abilities.venom_aura, predicate=tlc:tribes/leafwings, predicate=!tlc:abilities/cooldowns/leafwings/venom_aura/active] actionbar {"text": "Venom Aura has entered cooldown!", "color": "dark_green"}
+tag @a[tag=tlc.cooldown.active, tag=tlc.abilities.venom_aura, predicate=tlc:tribes/leafwings, predicate=!tlc:abilities/cooldowns/leafwings/venom_aura/active] remove tlc.abilities.venom_aura
+
+    # Announce off cooldown
+title @a[tag=tlc.cooldown.active, predicate=tlc:tribes/leafwings, predicate=!tlc:abilities/cooldowns/leafwings/venom_aura] actionbar {"text": "Venom Aura is off cooldown!", "color": "dark_green"}
 
 #endregion
