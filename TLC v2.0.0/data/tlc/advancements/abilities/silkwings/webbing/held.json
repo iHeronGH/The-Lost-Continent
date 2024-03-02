@@ -1,0 +1,26 @@
+{
+    "criteria": {
+        "webbing_activated": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "tlc:tribes/silkwings"
+                    },
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "eoflib:mainhand/ability/tertiary"
+                    },
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "tlc:passives/silk_spinner/not_full"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "tlc:abilities/activate/silkwings/webbing/charge_silk_spinner"
+    }
+}

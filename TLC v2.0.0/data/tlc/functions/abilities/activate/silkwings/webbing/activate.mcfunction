@@ -13,16 +13,16 @@ scoreboard players operation @s[tag=!eoflib.cooldown.bypass] tlc.abilities.webbi
 
     # Activate Webbing
         ## User effects
-tag @s add tlc.abilities.webbing
-function tlc:abilities/activate/silkwings/webbing/loop
+
 
         ## Enemy effects
-tag @e[predicate=eoflib:entities/affected, predicate=eoflib:damage/recent, predicate=!tlc:tribes/silkwings] add tlc.abilities.webbing.web_trails
+tag @e[predicate=eoflib:entities/affected, predicate=eoflib:damage/recent, predicate=!tlc:tribes/silkwings] add tlc.effects.entangled.1
+schedule function tlc:effects/entangled/1 1t
 
     # Begin cooldown
 execute if entity @s[tag=!eoflib.cooldown.bypass] run function #eoflib:abilities/cooldowns/main
 
     # Revoke advancement
-advancement revoke @s only tlc:abilities/silkwings/webbing
+advancement revoke @s only tlc:abilities/silkwings/webbing/activate
 
 #endregion

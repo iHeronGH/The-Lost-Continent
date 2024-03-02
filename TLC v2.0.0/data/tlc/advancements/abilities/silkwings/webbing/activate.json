@@ -30,6 +30,13 @@
                     {
                         "condition": "minecraft:reference",
                         "name": "eoflib:entities/affected"
+                    },
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:reference",
+                            "name": "tlc:tribes/silkwings"
+                        }
                     }
                 ]
             }
