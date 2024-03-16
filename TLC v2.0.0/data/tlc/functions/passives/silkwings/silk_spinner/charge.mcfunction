@@ -12,7 +12,7 @@ scoreboard players add @a[tag=eoflib.atts, predicate=tlc:tribes/silkwings, predi
 scoreboard players set @a[tag=eoflib.atts, predicate=tlc:tribes/silkwings, predicate=tlc:passives/silk_spinner/higher_than_max] tlc.passives.silk_spinner 7200
 
     # Switch out Silk Snipe for Silk Burst
-execute if entity @a[tag=eoflib.abils, predicate=tlc:passives/silk_spinner/4] run function #eoflib:reset/abilities
+execute if entity @a[tag=eoflib.abilities, predicate=tlc:passives/silk_spinner/4] run function #eoflib:reset/abilities
 
     # Bossbar visibility
 bossbar set tlc:passives/silk_spinner/0 players @a[tag=eoflib.atts, predicate=tlc:tribes/silkwings, predicate=tlc:passives/silk_spinner/0_range]

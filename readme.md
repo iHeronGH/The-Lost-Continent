@@ -233,6 +233,14 @@ Entangled is a custom effect that forces those affected by it to leave a path of
 | :-------------------------: | :---: | :--------------------: |
 | [Webbing](#tribe-abilities) |   1   | Applies Entangled (6s) |
 
+#### Revealed
+
+Revealed is a custom effect that exposes those affected by it with Glowing and forces them to take additional damage from all SilkWings.
+
+|          Ability          | Level |      Interaction      |
+| :-----------------------: | :---: | :-------------------: |
+| [Sense](#tribe-abilities) |   1   | Applies Revealed (8s) |
+
 </details>
 
 ---

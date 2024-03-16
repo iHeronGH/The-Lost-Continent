@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "tlc:passives/main",
+        "tlc:passives/leafwings/photosynthesis/1/cooldown",
+        "tlc:passives/silkwings/silk_spinner/charge",
+        "tlc:abilities/cooldowns/main"
+    ]
+}

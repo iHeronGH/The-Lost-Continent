@@ -10,11 +10,25 @@
                     },
                     {
                         "condition": "minecraft:reference",
-                        "name": "eoflib:mainhand/ability/tertiary"
+                        "name": "eoflib:inventory/mainhand/ability/tertiary"
                     },
                     {
                         "condition": "minecraft:reference",
                         "name": "tlc:passives/silk_spinner/not_full"
+                    }
+                ]
+            }
+        },
+        "no_active_blacklist_operation": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:reference",
+                            "name": "eoflib:settings/admin/in_blacklist_operation"
+                        }
                     }
                 ]
             }

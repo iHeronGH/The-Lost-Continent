@@ -15,10 +15,6 @@ function tlc:load/gen/scoreboards/ability_objectives
 function tlc:load/gen/scoreboards/passive_objectives
 
     # Scoreholders
-        ## Global variables
-#define score_holder #eoflib.dlc.tlc The load status of this datapack.
-scoreboard players set #eoflib.dlc.tlc eoflib.dlcs 1
-
         ## Ability variables
 function tlc:load/gen/scoreboards/ability_variables
 
