@@ -9,7 +9,7 @@
                     "functions": [
                         {
                             "function": "minecraft:reference",
-                            "name": "tlc:ability/hivewings/sting_strike"
+                            "name": "tlc:ability/hivewings/sting_strike/paralysis"
                         }
                     ]
                 }
