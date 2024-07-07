@@ -28,7 +28,7 @@
             }
         },
         "cooldown_checks": {
-            "trigger": "minecraft:recipe_unlocked",
+            "trigger": "minecraft:using_item",
             "conditions": {
                 "player": [
                     {
@@ -48,7 +48,12 @@
                         ]
                     }
                 ],
-                "recipe": "eoflib:tertiary"
+                "item": {
+                    "items": [
+                        "minecraft:ender_eye"
+                    ],
+                    "nbt": "{eof_data: {ability_data: {type: 'tertiary'}}}"
+                }
             }
         }
     },

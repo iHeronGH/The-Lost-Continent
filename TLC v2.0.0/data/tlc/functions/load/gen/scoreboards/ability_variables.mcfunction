@@ -68,7 +68,7 @@ scoreboard players operation #tlc.abilities.leafspeak.duration_end tlc.abilities
         ## Tertiary
             ### Sting Strike
 #define score_holder #tlc.abilities.sting_strike.cooldown Sets the cooldown for Sting Strike.
-execute store result score #tlc.abilities.sting_strike.cooldown tlc.abilities.sting_strike run data get storage eoflib:config tlc.Abilities[].HiveWings[].tertiary[].eof_data.ability_data.cooldown 20
+execute store result score #tlc.abilities.sting_strike.cooldown tlc.abilities.sting_strike run data get storage eoflib:config tlc.Abilities[].HiveWings[].tertiary[0].eof_data.ability_data.cooldown 20
 
 #define score_holder #tlc.abilities.sting_strike.duration Sets the duration for Sting Strike.
 execute store result score #tlc.abilities.sting_strike.duration tlc.abilities.sting_strike run data get storage eoflib:config tlc.Abilities[].HiveWings[].tertiary[].eof_data.ability_data.duration 20

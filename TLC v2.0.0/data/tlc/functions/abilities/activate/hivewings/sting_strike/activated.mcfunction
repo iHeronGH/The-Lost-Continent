@@ -11,9 +11,9 @@ execute unless entity @s run tellraw @a[tag=eoflib.debug] [{"text": "[", "color"
         ## User effects
 
         ## Enemy effects
-execute if entity @s[tag=tlc.hivewings.paralysis_mode, predicate=tlc:tribes/hivewings] run effect give @e[predicate=eoflib:damage/recent] slowness 8 4 true
-execute if entity @s[tag=tlc.hivewings.poison_mode, predicate=tlc:tribes/hivewings] run effect give @e[predicate=eoflib:damage/recent] poison 8 3 true
-execute if entity @s[predicate=tlc:tribes/hivewings] run effect give @e[predicate=eoflib:damage/recent] weakness 8 1 true
+execute if entity @s[tag=tlc.hivewings.paralysis_mode, predicate=tlc:tribes/hivewings] run effect give @e[predicate=eoflib:damage/recent, distance=0.1..10] slowness 8 4 true
+execute if entity @s[tag=tlc.hivewings.poison_mode, predicate=tlc:tribes/hivewings] run effect give @e[predicate=eoflib:damage/recent, distance=0.1..10] poison 8 3 true
+execute if entity @s[predicate=tlc:tribes/hivewings] run effect give @e[predicate=eoflib:damage/recent, distance=0.1..10] weakness 8 1 true
 
     # Begin cooldown
 tag @s[tag=!eoflib.cooldown.bypass] add tlc.cooldown.active
