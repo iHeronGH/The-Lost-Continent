@@ -18,9 +18,9 @@ title @s actionbar {"text": "Leafspeak activated!", "color": "green"}
 effect give @s resistance 8 0 true
 
             ### Randomise Poison Point spawns
-summon marker ~ ~ ~ {Tags:["tlc.leafspeak.poison_point"]}
-summon marker ~ ~ ~ {Tags:["tlc.leafspeak.poison_point"]}
-summon marker ~ ~ ~ {Tags:["tlc.leafspeak.poison_point"]}
+summon marker ~ ~ ~ {Tags: ["tlc.leafspeak.poison_point"]}
+summon marker ~ ~ ~ {Tags: ["tlc.leafspeak.poison_point"]}
+summon marker ~ ~ ~ {Tags: ["tlc.leafspeak.poison_point"]}
 spreadplayers ~ ~ 12 7 false @e[sort=nearest, limit=3, type=marker, tag=tlc.leafspeak.poison_point]
 
             ### Summon Poison Points
