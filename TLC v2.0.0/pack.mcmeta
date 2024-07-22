@@ -1,10 +1,10 @@
 {
     "pack": {
-        "pack_format": 15,
-        "supported_formats": [
-            15,
-            18
-        ],
+        "pack_format": 18,
+        "supported_formats": {
+            "min_inclusive": 18,
+            "max_inclusive": 26
+        },
         "description": [
             {
                 "text": "Version: ",
@@ -14,9 +14,9 @@
                 "text": "2.0.0",
                 "color": "gold"
             },
-            "\n\n",
+            "\n",
             {
-                "text": "The official Lost Continent datapack!\n\nThis datapack implements the three\nPantalan tribes, along with nine new\nabilities and three new passives!"
+                "text": "The official Lost Continent datapack!\n\nThis datapack implements the three\nPantalan tribes from Wings of Fire, along with nine new\nabilities and three new passives!"
             }
         ]
     }
