@@ -1,5 +1,5 @@
 {
-    "parent": "eoflib:ability_used",
+    "parent": "eoflib:ability_activated",
     "criteria": {
         "sting_strike_activated": {
             "trigger": "minecraft:player_hurt_entity",
@@ -28,7 +28,7 @@
             }
         },
         "cooldown_checks": {
-            "trigger": "minecraft:using_item",
+            "trigger": "minecraft:tick",
             "conditions": {
                 "player": [
                     {
@@ -47,13 +47,7 @@
                             }
                         ]
                     }
-                ],
-                "item": {
-                    "items": [
-                        "minecraft:ender_eye"
-                    ],
-                    "nbt": "{eof_data: {ability_data: {type: 'tertiary'}}}"
-                }
+                ]
             }
         }
     },

@@ -1,5 +1,5 @@
 {
-    "parent": "eoflib:ability_used",
+    "parent": "eoflib:ability_activated",
     "criteria": {
         "fury_shift_used": {
             "trigger": "minecraft:using_item",
@@ -18,13 +18,15 @@
                     }
                 ],
                 "item": {
-                    "items": ["minecraft:ender_eye"],
+                    "items": [
+                        "minecraft:warped_fungus_on_a_stick"
+                    ],
                     "nbt": "{eof_data: {ability_data: {type: 'primary'}}}"
                 }
             }
         },
         "no_active_blacklist_operation": {
-            "trigger": "minecraft:using_item",
+            "trigger": "minecraft:tick",
             "conditions": {
                 "player": [
                     {
@@ -34,11 +36,7 @@
                             "name": "eoflib:settings/admin/in_blacklist_operation"
                         }
                     }
-                ],
-                "item": {
-                    "items": ["minecraft:ender_eye"],
-                    "nbt": "{eof_data: {ability_data: {}}}"
-                }
+                ]
             }
         }
     },
