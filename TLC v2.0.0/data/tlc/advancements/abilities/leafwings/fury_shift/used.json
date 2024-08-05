@@ -18,10 +18,8 @@
                     }
                 ],
                 "item": {
-                    "items": [
-                        "minecraft:warped_fungus_on_a_stick"
-                    ],
-                    "nbt": "{eof_data: {ability_data: {type: 'primary'}}}"
+                    "items": ["minecraft:warped_fungus_on_a_stick"],
+                    "nbt": "{eof_data: {ability_data: {archetype: 'primary'}}}"
                 }
             }
         },
