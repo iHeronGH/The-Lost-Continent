@@ -22,7 +22,4 @@ function tlc:abilities/activate/leafwings/venom_aura/loop
     # Begin cooldown
 execute if entity @s[tag=!eoflib.cooldown.bypass] run function #eoflib:abilities/cooldowns/main
 
-    # Revoke advancement
-advancement revoke @s only tlc:abilities/leafwings/venom_aura
-
 #endregion

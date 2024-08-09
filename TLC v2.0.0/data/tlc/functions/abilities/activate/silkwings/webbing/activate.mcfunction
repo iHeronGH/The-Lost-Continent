@@ -17,7 +17,7 @@ scoreboard players operation @s[tag=!eoflib.cooldown.bypass] tlc.abilities.webbi
 
 
         ## Enemy effects
-tag @e[predicate=eoflib:entities/affected, predicate=eoflib:damage/recent, predicate=!tlc:tribes/silkwings] add tlc.effects.entangled.1
+tag @e[sort=nearest, limit=1, predicate=eoflib:entities/affected, predicate=eoflib:damage/recent, predicate=!tlc:tribes/silkwings, distance=0.1..10] add tlc.effects.entangled.1
 schedule function tlc:effects/entangled/1 1t
 
     # Begin cooldown

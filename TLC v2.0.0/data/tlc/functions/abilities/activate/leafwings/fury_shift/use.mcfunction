@@ -1,4 +1,4 @@
-#> tlc:abilities/activate/leafwings/fury_shift/used
+#> tlc:abilities/activate/leafwings/fury_shift/use
 #
 # Activate LeafWing ability Fury Shift.
 

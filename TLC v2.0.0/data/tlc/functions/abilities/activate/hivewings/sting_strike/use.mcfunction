@@ -1,4 +1,4 @@
-#> tlc:abilities/activate/hivewings/sting_strike/used
+#> tlc:abilities/activate/hivewings/sting_strike/use
 #
 # Activate HiveWing ability Sting Strike.
 

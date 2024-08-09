@@ -38,7 +38,4 @@ tag @s[tag=!eoflib.cooldown.bypass] add tlc.cooldown.active
 scoreboard players operation @s[tag=!eoflib.cooldown.bypass] tlc.abilities.leafspeak = #tlc.abilities.leafspeak.cooldown tlc.abilities.leafspeak
 execute if entity @s[tag=!eoflib.cooldown.bypass] run function #eoflib:abilities/cooldowns/main
 
-    # Revoke advancement
-advancement revoke @s only tlc:abilities/leafwings/leafspeak
-
 #endregion
