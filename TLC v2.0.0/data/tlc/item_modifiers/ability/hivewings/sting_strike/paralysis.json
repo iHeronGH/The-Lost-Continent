@@ -7,12 +7,12 @@
         },
         "ops": [
             {
-                "source": "tlc.Abilities[].HiveWings[].tertiary[{eof_data: {ability_data: {mode: \"paralysis\"}}}].mc_data",
+                "source": "tlc.Abilities[].HiveWings.tertiary[{eof_data: {ability_data: {mode: \"paralysis\"}}}].mc_data",
                 "target": "{}",
                 "op": "merge"
             },
             {
-                "source": "tlc.Abilities[].HiveWings[].tertiary[{eof_data: {ability_data: {mode: \"paralysis\"}}}].eof_data",
+                "source": "tlc.Abilities[].HiveWings.tertiary[{eof_data: {ability_data: {mode: \"paralysis\"}}}].eof_data",
                 "target": "eof_data",
                 "op": "replace"
             }

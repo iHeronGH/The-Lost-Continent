@@ -7,12 +7,12 @@
         },
         "ops": [
             {
-                "source": "tlc.Abilities[].SilkWings[].primary[1].mc_data",
+                "source": "tlc.Abilities[].SilkWings.primary[1].mc_data",
                 "target": "{}",
                 "op": "merge"
             },
             {
-                "source": "tlc.Abilities[].SilkWings[].primary[1].eof_data",
+                "source": "tlc.Abilities[].SilkWings.primary[1].eof_data",
                 "target": "eof_data",
                 "op": "replace"
             }

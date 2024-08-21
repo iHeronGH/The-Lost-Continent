@@ -11,6 +11,6 @@ execute unless entity @s run tellraw @a[tag=eoflib.debug, scores={eoflib.debug_m
     # Lookup ability used
 execute if predicate tlc:abilities/criteria/hivewings/hive_mind run function tlc:abilities/activate/hivewings/hive_mind
 execute if predicate tlc:abilities/criteria/leafwings/leafspeak run function tlc:abilities/activate/leafwings/leafspeak
-execute if predicate tlc:abilities/criteria/silkwings/sense run function tlc:abilities/activate/silkwings/sense
+execute if predicate tlc:abilities/criteria/silkwings/metamorphosis run function tlc:abilities/activate/silkwings/metamorphosis
 
 #endregion

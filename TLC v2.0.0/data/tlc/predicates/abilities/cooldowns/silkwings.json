@@ -7,6 +7,10 @@
         },
         {
             "condition": "minecraft:reference",
+            "name": "tlc:abilities/cooldowns/silkwings/metamorphosis"
+        },
+        {
+            "condition": "minecraft:reference",
             "name": "tlc:abilities/cooldowns/silkwings/webbing"
         }
     ]

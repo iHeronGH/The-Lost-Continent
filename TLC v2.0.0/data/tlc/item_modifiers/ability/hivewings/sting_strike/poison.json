@@ -7,12 +7,12 @@
         },
         "ops": [
             {
-                "source": "tlc.Abilities[].HiveWings[].tertiary[{eof_data: {ability_data: {mode: \"poison\"}}}].mc_data",
+                "source": "tlc.Abilities[].HiveWings.tertiary[{eof_data: {ability_data: {mode: \"poison\"}}}].mc_data",
                 "target": "{}",
                 "op": "merge"
             },
             {
-                "source": "tlc.Abilities[].HiveWings[].tertiary[{eof_data: {ability_data: {mode: \"poison\"}}}].eof_data",
+                "source": "tlc.Abilities[].HiveWings.tertiary[{eof_data: {ability_data: {mode: \"poison\"}}}].eof_data",
                 "target": "eof_data",
                 "op": "replace"
             }

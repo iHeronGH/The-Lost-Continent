@@ -9,7 +9,7 @@
                     "functions": [
                         {
                             "function": "minecraft:reference",
-                            "name": "tlc:ability/silkwings/sense"
+                            "name": "tlc:ability/silkwings/metamorphosis"
                         }
                     ]
                 }
