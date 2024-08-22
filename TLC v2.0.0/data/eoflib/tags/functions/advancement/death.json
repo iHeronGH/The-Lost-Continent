@@ -1,6 +1,6 @@
 {
     "replace": false,
     "values": [
-        "tlc:abilities/return/main"
+        "tlc:advancement/death"
     ]
 }
