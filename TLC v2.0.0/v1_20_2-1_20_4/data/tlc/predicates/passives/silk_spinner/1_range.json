@@ -1,0 +1,26 @@
+{
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+        "tlc.passives.silk_spinner": {
+            "min": {
+                "type": "minecraft:score",
+                "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#tlc.passives.silk_spinner.1.min"
+                },
+                "score": "tlc.passives.silk_spinner",
+                "scale": 1
+            },
+            "max": {
+                "type": "minecraft:score",
+                "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#tlc.passives.silk_spinner.1.max"
+                },
+                "score": "tlc.passives.silk_spinner",
+                "scale": 1
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "parent": "tlc:pantalan",
+    "criteria": {
+        "no_tribe": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:reference",
+                            "name": "tlc:tribes/pantalan"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "tlc:passives/main"
+    }
+}
+

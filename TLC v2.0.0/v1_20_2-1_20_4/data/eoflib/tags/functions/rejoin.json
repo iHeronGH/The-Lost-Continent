@@ -1,0 +1,7 @@
+{
+    "replace": false,
+    "values": [
+        "tlc:passives/main",
+        "tlc:passives/leafwings/photosynthesis/1/cooldown"
+    ]
+}

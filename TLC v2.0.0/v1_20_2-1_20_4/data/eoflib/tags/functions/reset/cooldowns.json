@@ -1,0 +1,7 @@
+{
+    "replace": false,
+    "values": [
+        "tlc:reset/cooldowns/other",
+        "tlc:reset/cooldowns/own"
+    ]
+}

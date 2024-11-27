@@ -1,0 +1,21 @@
+{
+    "condition": "minecraft:any_of",
+    "terms": [
+        {
+            "condition": "minecraft:reference",
+            "name": "tlc:passives/silk_spinner/0_range"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "tlc:passives/silk_spinner/1_range"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "tlc:passives/silk_spinner/2_range"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "tlc:passives/silk_spinner/3_range"
+        }
+    ]
+}

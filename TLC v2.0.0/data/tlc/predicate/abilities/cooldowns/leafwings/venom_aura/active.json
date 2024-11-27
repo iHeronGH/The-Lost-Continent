@@ -1,0 +1,26 @@
+{
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+        "tlc.abilities.venom_aura.duration": {
+            "min": {
+                "type": "minecraft:score",
+                "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#eoflib.1"
+                },
+                "score": "eoflib.numbers",
+                "scale": 1
+            },
+            "max": {
+                "type": "minecraft:score",
+                "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#duration"
+                },
+                "score": "tlc.abilities.venom_aura",
+                "scale": 1
+            }
+        }
+    }
+}

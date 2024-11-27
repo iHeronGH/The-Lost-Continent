@@ -1,0 +1,10 @@
+[
+    {
+        "condition": "minecraft:reference",
+        "name": "tlc:tribes/silkwings"
+    },
+    {
+        "condition": "minecraft:reference",
+        "name": "eoflib:abilities/primary_activated"
+    }
+]
