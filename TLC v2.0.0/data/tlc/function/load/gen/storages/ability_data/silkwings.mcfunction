@@ -5,7 +5,7 @@
 #region
     # Debug
 execute if entity @s run tellraw @s[tag=eoflib.debug, scores={eoflib.debug_mode=1..}] [{"text": "[", "color": "dark_gray"}, {"text": "Debug", "color": "gold"}, {"text": "] - ", "color": "dark_gray"}, {"text": "tlc:ability_data/silkwings.mcf", "color": "gold", "hoverEvent": {"action": "show_text", "value": {"text": "You ran the following function:\n- tlc:load/gen/storages/ability_data/silkwings.mcfunction", "color": "aqua"}}}]
-execute if entity @s at @s run tellraw @a[tag=eoflib.debug, scores={eoflib.debug_mode=3..}, distance=0.1..] [{"text": "[", "color": "dark_gray"}, {"text": "Debug", "color": "gold"}, {"text": "] - ", "color": "dark_gray"}, {"text": "tlc:ability_data/silkwings.mcf", "color": "gold", "hoverEvent": {"action": "show_text", "value": [{"selector": "@s", "color": "aqua"}, {"text": " ran the following function:\n- tlc:load/gen/storages/ability_data/silkwings.mcfunction", "color": "aqua"}]}}]
+execute if entity @s at @s run tellraw @a[tag=eoflib.debug, scores={eoflib.debug_mode=3..}, distance=0.1..] [{"text": "[", "color": "dark_gray"}, {"text": "Debug", "color": "gold"}, {"text": "] - ", "color": "dark_gray"}, {"text": "tlc:ability_data/silkwings.mcf", "color": "#967228", "hoverEvent": {"action": "show_text", "value": [{"selector": "@s", "color": "aqua"}, {"text": " ran the following function:\n- tlc:load/gen/storages/ability_data/silkwings.mcfunction", "color": "aqua"}]}}]
 execute unless entity @s run tellraw @a[tag=eoflib.debug, scores={eoflib.debug_mode=1..}] [{"text": "[", "color": "dark_gray"}, {"text": "Debug", "color": "gold"}, {"text": "] - ", "color": "dark_gray"}, {"text": "tlc:ability_data/silkwings.mcf", "color": "gray", "hoverEvent": {"action": "show_text", "value": {"text": "Server ran the following function:\n- tlc:load/gen/storages/ability_data/silkwings.mcfunction", "color": "aqua"}}}]
 
     # Initialise ability array
@@ -31,7 +31,7 @@ data modify storage eoflib:config tlc.Abilities[].SilkWings.primary[0].eof_data 
         "format": { \
             "name": '{"text": "Silk Shot", "color": "gray", "italic": false}', \
             "tribe": '{"text": "SilkWings", "color": "light_purple", "italic": false}', \
-            "archetype": '{"text": "Primary", "color": "gray", "italic": false}', \
+            "archetype": '{"text": "Primary (Straight, 12)", "color": "gray", "italic": false}', \
             "activation": '[{"keybind": "key.sneak", "color": "gray", "italic": false}, {"text": " + ", "color": "gray", "italic": false}, {"keybind": "key.use", "color": "gray", "italic": false}]', \
             "cooldown": '{"text": "10s", "color": "gray", "italic": false}', \
             "effects": [ \
@@ -67,7 +67,7 @@ data modify storage eoflib:config tlc.Abilities[].SilkWings.primary[1].eof_data 
         "format": { \
             "name": '{"text": "Silk Shot", "color": "gray", "italic": false}', \
             "tribe": '{"text": "SilkWings", "color": "light_purple", "italic": false}', \
-            "archetype": '{"text": "Primary", "color": "gray", "italic": false}', \
+            "archetype": '{"text": "Primary (Arcing, 14 / 33°)", "color": "gray", "italic": false}', \
             "activation": '[{"keybind": "key.sneak", "color": "gray", "italic": false}, {"text": " + ", "color": "gray", "italic": false}, {"keybind": "key.use", "color": "gray", "italic": false}]', \
             "cooldown": '{"text": "10s", "color": "gray", "italic": false}', \
             "effects": [ \

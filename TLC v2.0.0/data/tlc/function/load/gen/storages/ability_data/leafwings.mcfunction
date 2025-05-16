@@ -5,7 +5,7 @@
 #region
     # Debug
 execute if entity @s run tellraw @s[tag=eoflib.debug, scores={eoflib.debug_mode=1..}] [{"text": "[", "color": "dark_gray"}, {"text": "Debug", "color": "gold"}, {"text": "] - ", "color": "dark_gray"}, {"text": "tlc:ability_data/leafwings.mcf", "color": "gold", "hoverEvent": {"action": "show_text", "value": {"text": "You ran the following function:\n- tlc:load/gen/storages/ability_data/leafwings.mcfunction", "color": "aqua"}}}]
-execute if entity @s at @s run tellraw @a[tag=eoflib.debug, scores={eoflib.debug_mode=3..}, distance=0.1..] [{"text": "[", "color": "dark_gray"}, {"text": "Debug", "color": "gold"}, {"text": "] - ", "color": "dark_gray"}, {"text": "tlc:ability_data/leafwings.mcf", "color": "gold", "hoverEvent": {"action": "show_text", "value": [{"selector": "@s", "color": "aqua"}, {"text": " ran the following function:\n- tlc:load/gen/storages/ability_data/leafwings.mcfunction", "color": "aqua"}]}}]
+execute if entity @s at @s run tellraw @a[tag=eoflib.debug, scores={eoflib.debug_mode=3..}, distance=0.1..] [{"text": "[", "color": "dark_gray"}, {"text": "Debug", "color": "gold"}, {"text": "] - ", "color": "dark_gray"}, {"text": "tlc:ability_data/leafwings.mcf", "color": "#967228", "hoverEvent": {"action": "show_text", "value": [{"selector": "@s", "color": "aqua"}, {"text": " ran the following function:\n- tlc:load/gen/storages/ability_data/leafwings.mcfunction", "color": "aqua"}]}}]
 execute unless entity @s run tellraw @a[tag=eoflib.debug, scores={eoflib.debug_mode=1..}] [{"text": "[", "color": "dark_gray"}, {"text": "Debug", "color": "gold"}, {"text": "] - ", "color": "dark_gray"}, {"text": "tlc:ability_data/leafwings.mcf", "color": "gray", "hoverEvent": {"action": "show_text", "value": {"text": "Server ran the following function:\n- tlc:load/gen/storages/ability_data/leafwings.mcfunction", "color": "aqua"}}}]
 
     # Initialise ability array
@@ -31,7 +31,7 @@ data modify storage eoflib:config tlc.Abilities[].LeafWings.primary[0].eof_data 
         "format": { \
             "name": '{"text": "Fury Shift", "color": "dark_green", "italic": false}', \
             "tribe": '{"text": "LeafWing", "color": "dark_green", "italic": false}', \
-            "archetype": '{"text": "Primary", "color": "gray", "italic": false}', \
+            "archetype": '{"text": "Primary (Straight, 14)", "color": "gray", "italic": false}', \
             "activation": '[{"keybind": "key.sneak", "color": "gray", "italic": false}, {"text": " + ", "color": "gray", "italic": false}, {"keybind": "key.use", "color": "gray", "italic": false}]', \
             "cooldown": '{"text": "10s", "color": "gray", "italic": false}', \
             "effects": [ \
@@ -65,7 +65,7 @@ data modify storage eoflib:config tlc.Abilities[].LeafWings.primary[1].eof_data 
         "format": { \
             "name": '{"text": "Fury Shift", "color": "dark_green", "italic": false}', \
             "tribe": '{"text": "LeafWing", "color": "dark_green", "italic": false}', \
-            "archetype": '{"text": "Primary", "color": "gray", "italic": false}', \
+            "archetype": '{"text": "Primary (Arcing, 18 / 80°)", "color": "gray", "italic": false}', \
             "activation": '[{"keybind": "key.sneak", "color": "gray", "italic": false}, {"text": " + ", "color": "gray", "italic": false}, {"keybind": "key.use", "color": "gray", "italic": false}]', \
             "cooldown": '{"text": "10s", "color": "gray", "italic": false}', \
             "effects": [ \
